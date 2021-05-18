@@ -1,0 +1,184 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Permanent Marker', cursive;
+    /* background-image: radial-gradient(circle, rgba(1,50,67,.8), rgba(34,49,63,.7), black); */
+    background-image: url(images/SpeaktotheStorm.jpg);
+    background-size: cover;
+    display: grid;
+    background-position-y: -22rem;
+}
+
+.footDiv {
+    background-color: black;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 80%;
+    padding: .5rem;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: right;
+    grid-template-columns: 1fr auto;
+}
+
+h1 {
+    font-size: 4rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: .5rem;
+}
+
+.cursive {
+    font-family: 'Alex Brush', cursive;
+    font-size: 10rem;
+}
+
+.border {
+    padding: .5rem;
+    display: grid;
+    background-color: rgba(235, 230, 230, .7);
+    mix-blend-mode: screen;
+    color: black;
+}
+
+.font3 {
+    font-size: 2.8rem;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    grid-template-rows:1fr auto;
+}
+
+footer {
+    position: fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    text-align: right;
+    color:black;
+    padding-bottom: 1rem;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .wrapper {
+        width:1024px;
+    }
+
+    nav ul {
+        padding-left: 0em;
+        padding-right: 3em;
+    }
+ 
+    .container {
+        padding-bottom:15px;
+    }
+    
+    .container-contact {
+        width:800px;
+        margin: auto;
+    }
+
+    .form-group {
+        width:700px;
+        margin: auto;
+    }
+
+    .content {
+        min-height: calc(60vh - 80px);
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* These rule take effect when the browser's width is either 960 or less. */
+
+@media screen and (max-width:960px) {
+
+    .wrapper {
+        width:960px;
+    }
+}
+
+/* These rule take effect when the browser's width is either 768 or less. */
+
+@media screen and (max-width:768px) {
+
+    .wrapper {
+        width:768px;
+    }
+    
+    .container {
+        padding-bottom:15px;
+    }
+
+    .container-contact {
+        width:650px;
+        margin:auto;
+    }
+
+    .form-group {
+        width:590px;
+        margin: auto;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* These rule take effect when the browser's width is either 640 or less. */
+
+@media screen and (max-width:640px) {
+
+    .wrapper {
+        width:500px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        padding: 0em;
+    }
+
+    ul {
+        padding-left: 0em;
+    }
+
+    .container-contact {
+        width:450px;
+        margin: 0px, 25px;
+        background-color: maroon
+    }
+
+    .gold-contact {
+        color: gold;
+    }
+
+    .form-group {
+        width:450px;
+        margin: auto;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+} 
