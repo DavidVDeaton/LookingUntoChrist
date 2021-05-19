@@ -5,15 +5,33 @@
 }
 
 body {
-    font-family:'Permanent Marker', cursive;
-    /* background-image: radial-gradient(circle, rgba(1,50,67,.8), rgba(34,49,63,.7), black); */
     background-image: url(images/SpeaktotheStorm.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     display: grid;
     background-position-y: -22rem;
+    animation-name: storm;
+    animation-duration: 5s;
 }
 
-.footDiv {
+@keyframes storm {
+    from {
+        background-position-y:-16rem;
+        background-position-x:-1.5rem;
+    }
+    to {
+        background-position-y: -22rem;
+        background-position-x: 0rem;
+    }
+}
+
+@keyframes intro {
+    0% {color:transparent;}
+    50% {color: rgba(235, 230, 230, .7);}
+    100% {color:transparent;}
+}
+
+/* .footDiv {
     background-color: black;
     mix-blend-mode: multiply;
     width: 100%;
@@ -23,30 +41,239 @@ body {
     display: grid;
     place-items: right;
     grid-template-columns: 1fr auto;
-}
+} */
 
 h1 {
     font-size: 4rem;
-    color: black;
     font-family: 'Montserrat', sans-serif;
     padding-left: .5rem;
 }
 
 .cursive {
-    font-family: 'Alex Brush', cursive;
-    font-size: 10rem;
+    padding-left: 1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 6.8rem;
+    animation-name: intro;
+    animation-duration: 16s;
+    animation-delay: 1.5s;
 }
 
 .border {
     padding: .5rem;
     display: grid;
-    background-color: rgba(235, 230, 230, .7);
-    mix-blend-mode: screen;
-    color: black;
+    color: transparent;
+}
+
+.bold {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+}
+
+p {
+    width: 75%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+.endorsement1 {
+    color: transparent;
+    margin-left: 20rem;
+    padding-left: 1rem;
+    animation-name: endor1;
+    animation-duration: 30s;
+    animation-delay: 16s;
+}
+
+@keyframes endor1 {
+    0% {
+        color:transparent;
+        margin-left: 18rem;
+        margin-top: 10rem;
+        background-color: transparent;
+    }
+    20% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+    }
+    23% {
+        margin-left: 5rem;
+        margin-top: 16rem;
+    }
+    90% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+    }
+    100% {
+        color:transparent;
+        margin-left: 25rem;
+        margin-top: 16rem;
+    }
+}
+
+.e1p2 {
+    color: transparent;
+    padding-left: 1rem;
+    animation-name: e1p2;
+    animation-duration: 8.5s;
+    animation-delay: 16s;
+}
+
+@keyframes e1p2 {
+    0% {
+        color:transparent;
+        margin-left: 18rem;
+        background-color: transparent;
+    }
+    20% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+        padding-left: 1.5rem;
+    }
+    90% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+        padding-left: 1.5rem;
+    }
+    100% {
+        color:transparent;
+        margin-left: -5rem;
+    }
+}
+
+.e1p3 {
+    color: transparent;
+    padding-left: 1rem;
+    animation-name: e1p3;
+    animation-duration: 8s;
+    animation-delay: 20s;
+}
+
+@keyframes e1p3 {
+    0% {
+        color:transparent;
+        margin-left: 16rem;
+        background-color: transparent;
+    }
+    20% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+        padding-left: 1.5rem;
+    }
+    50% {
+        margin-top: 0rem;
+    }
+    70% {
+        margin-top: -2.4rem;
+    }
+    90% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+        padding-left: 1.5rem;
+    }
+    100% {
+        color:transparent;
+        margin-left: 5rem;
+        margin-top: -2.4rem;
+    }
+}
+
+.e1p4 {
+    color: transparent;
+    padding-left: 1rem;
+    animation-name: e1p4;
+    animation-duration: 8s;
+    animation-delay: 27.9s;
+}
+
+@keyframes e1p4 {
+    0% {
+        color:transparent;
+        margin-left: -16rem;
+        background-color: transparent;
+    }
+    20% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+        padding-left: 1.5rem;
+    }
+    90% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+        padding-left: 1.5rem;
+    }
+    100% {
+        color:transparent;
+        margin-left: 5rem;
+        margin-top: -4.9rem;
+    }
+}
+
+.e1p5 {
+    color: transparent;
+    padding-left: 1rem;
+    animation-name: e1p5;
+    animation-duration: 9s;
+    animation-delay: 35.6s;
+}
+
+@keyframes e1p5 {
+    0% {
+        color:transparent;
+        background-color: transparent;
+        margin-top: -7rem;
+    }
+    28% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+        padding-left: 1.5rem;
+    }
+    90% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+        padding-left: 1.5rem;
+    }
+    100% {
+        color:transparent;
+        margin-left: 5rem;
+        margin-top: -7rem;
+    }
+}
+
+.linger1 {
+    color: transparent;
+    animation-name: linger;
+    animation-duration: 8s;
+    animation-delay: 20s;
+}
+
+@keyframes linger {
+    0% {color:transparent;}
+    20% {color: white;}
+    50% {margin-top: 0rem;}
+    70% {margin-top: -2.4rem;}
+    90% {font-size: 2rem;}
+    100% {
+        color:white;
+        font-size: 3rem;
+        margin-top: -2.4rem;
+    }
 }
 
 .font3 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
+    animation-name: intro;
+    animation-duration: 16s;
+    animation-delay: 4s;
 }
 
 .container {
