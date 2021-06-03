@@ -5,16 +5,35 @@
 }
 
 body {
-    background-image: url(images/SpeaktotheStorm.jpg);
+    /* background-image: url(images/SpeaktotheStorm.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     display: grid;
-    background-position-y: -22rem;
-    animation-name: storm;
-    animation-duration: 5s;
+    /* background-position-y: -28rem;
+    background-position-x: 5rem; */
+    /* animation-name: storm;
+    animation-duration: 5s; */
 }
 
-@keyframes storm {
+.border {
+    width: 650px;
+}
+
+.storm {
+    display: grid;
+    width: 650px;
+}
+
+img {
+    width: 650px;
+}
+
+header {
+    padding: 1rem;
+    place-items: center;
+}
+
+/* @keyframes storm {
     from {
         background-position-y:-16rem;
         background-position-x:-1.5rem;
@@ -23,7 +42,7 @@ body {
         background-position-y: -22rem;
         background-position-x: 0rem;
     }
-}
+} */
 
 @keyframes intro {
     0% {color:transparent;}
@@ -56,6 +75,7 @@ h1 {
     animation-name: intro;
     animation-duration: 12s;
     animation-delay: 1.5s;
+    color: rgb(153,129,0);
 }
 
 .border {
@@ -81,8 +101,8 @@ p {
     margin-left: 20rem;
     padding-left: 1rem;
     animation-name: endor1;
-    animation-duration: 30s;
-    animation-delay: 14s;
+    animation-duration: 29s;
+    animation-delay: 9s;
 }
 
 @keyframes endor1 {
@@ -116,8 +136,8 @@ p {
     color: transparent;
     padding-left: 1rem;
     animation-name: e1p2;
-    animation-duration: 8.5s;
-    animation-delay: 16s;
+    animation-duration: 7.5s;
+    animation-delay: 11s;
 }
 
 @keyframes e1p2 {
@@ -139,7 +159,7 @@ p {
         padding-left: 1.5rem;
     }
     100% {
-        color:transparent;
+        color:white;
         margin-left: -5rem;
     }
 }
@@ -149,7 +169,7 @@ p {
     padding-left: 1rem;
     animation-name: e1p3;
     animation-duration: 6.8s;
-    animation-delay: 20s;
+    animation-delay: 15s;
 }
 
 @keyframes e1p3 {
@@ -166,18 +186,18 @@ p {
     }
     50% {
         margin-top: 0rem;
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
     }
     70% {
         margin-top: -2.4rem;
     }
     90% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
         margin-left: 5rem;
         padding-left: 1.5rem;
     }
     100% {
-        color:transparent;
+        color:white;
         margin-left: 5rem;
         margin-top: -2.4rem;
     }
@@ -188,7 +208,7 @@ p {
     padding-left: 1rem;
     animation-name: e1p4;
     animation-duration: 8s;
-    animation-delay: 26.9s;
+    animation-delay: 19.5s;
 }
 
 @keyframes e1p4 {
@@ -197,6 +217,39 @@ p {
         margin-left: -16rem;
         background-color: transparent;
     }
+    20% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 2rem;
+        padding-left: 1.5rem;
+    }
+    90% {
+        color: white;
+        background-color: rgba(0, 0, 139, .2);
+        margin-left: 5rem;
+        padding-left: 1.5rem;
+    }
+    100% {
+        color:white;
+        margin-left: 5rem;
+        margin-top: -4.9rem;
+    }
+}
+
+.e1p5 {
+    color: transparent;
+    padding-left: 1rem;
+    animation-name: e1p5;
+    animation-duration: 9s;
+    animation-delay: 26s;
+}
+
+@keyframes e1p5 {
+    0% {
+        color:transparent;
+        background-color: transparent;
+    }
+
     20% {
         color: white;
         background-color: rgba(0, 0, 139, .2);
@@ -210,40 +263,7 @@ p {
         padding-left: 1.5rem;
     }
     100% {
-        color:transparent;
-        margin-left: 5rem;
-        margin-top: -4.9rem;
-    }
-}
-
-.e1p5 {
-    color: transparent;
-    padding-left: 1rem;
-    animation-name: e1p5;
-    animation-duration: 10s;
-    animation-delay: 32s;
-}
-
-@keyframes e1p5 {
-    0% {
-        color:transparent;
-        background-color: transparent;
-        margin-top: -7rem;
-    }
-    28% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 5rem;
-        padding-left: 1.5rem;
-    }
-    90% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 5rem;
-        padding-left: 1.5rem;
-    }
-    100% {
-        color:transparent;
+        color:white;
         margin-left: 5rem;
         margin-top: -7rem;
     }
@@ -253,19 +273,30 @@ p {
     color: transparent;
     animation-name: linger;
     animation-duration: 6.8s;
-    animation-delay: 20s;
+    animation-delay: 15s;
 }
 
 @keyframes linger {
     0% {color:transparent;}
     20% {color: white;}
-    50% {margin-top: 0rem;}
-    70% {margin-top: -2.4rem;}
-    90% {font-size: 2rem;}
-    100% {
+    50% {
+        margin-top: 0rem;
+        z-index: 0;
+        font-size: 2rem;
+    }
+    70% {
         color:white;
-        font-size: 3rem;
         margin-top: -2.4rem;
+        z-index: -1;
+    }
+    90% {        
+        color: rgba(235, 230, 230, .7);
+        margin-top: -2.4rem;
+        font-size: 2.1rem;
+    }
+    100% {
+        color: transparent;
+        z-index: -1;
     }
 }
 
@@ -279,7 +310,8 @@ p {
 .container {
     display: grid;
     width: 100vw;
-    grid-template-rows:1fr auto;
+    place-items: center;
+    grid-template-columns: auto auto;
 }
 
 footer {
