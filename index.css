@@ -5,14 +5,25 @@
 }
 
 body {
-    /* background-image: url(images/SpeaktotheStorm.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
     display: grid;
-    /* background-position-y: -28rem;
-    background-position-x: 5rem; */
-    /* animation-name: storm;
-    animation-duration: 5s; */
+    place-items: center;
+}
+
+nav {
+    padding: .5em;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    border-bottom: 2px solid rgb(153,129,0);
+}
+
+.justifyLeft {
+    justify-self: start;
+}
+
+.justifyCenter {
+    justify-self: center;
 }
 
 .border {
@@ -21,17 +32,31 @@ body {
 
 .storm {
     display: grid;
-    width: 650px;
+    place-items: center;
 }
 
 img {
-    width: 650px;
+    width: 580px;
 }
 
-header {
-    padding: 1rem;
-    place-items: center;
+/* .delete {
+    animation-name: delete1;
+    animation-delay: 10s;
+    animation-duration: 20s;
+    font-size: 1.5rem;
 }
+
+@keyframes delete1 {
+    0% {
+        font-size: 1.5rem;
+    }
+    1% {
+        font-size: .001rem;
+    }
+    100% {
+        font-size: .001rem;
+    }
+} */
 
 /* @keyframes storm {
     from {
@@ -44,11 +69,11 @@ header {
     }
 } */
 
-@keyframes intro {
+/* @keyframes intro {
     0% {color:transparent;}
     50% {color: rgba(235, 230, 230, .7);}
     100% {color:transparent;}
-}
+} */
 
 /* .footDiv {
     background-color: black;
@@ -64,18 +89,45 @@ header {
 
 h1 {
     font-size: 4rem;
-    font-family: 'Montserrat', sans-serif;
-    padding-left: .5rem;
+    padding: .5rem;
+
+}
+
+h2 {
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    padding: .5rem;
+}
+
+h4 {
+    font-size: 2rem;
+    padding: .3rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+    padding: .15rem;
 }
 
 .cursive {
-    padding-left: 1rem;
     font-family: 'Tangerine', cursive;
-    font-size: 6.8rem;
-    animation-name: intro;
-    animation-duration: 12s;
-    animation-delay: 1.5s;
+}
+
+.mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gold {
     color: rgb(153,129,0);
+}
+
+.sideBorder {
+    border-left: 2px solid rgb(153,129,0);
+    border-right: 2px solid rgb(153,129,0);
 }
 
 .border {
@@ -91,225 +143,130 @@ h1 {
 }
 
 p {
-    width: 75%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    width: 95%;
+    font-size: 1.5rem;
+;
 }
 
-.endorsement1 {
-    color: transparent;
-    margin-left: 20rem;
-    padding-left: 1rem;
-    animation-name: endor1;
-    animation-duration: 29s;
-    animation-delay: 9s;
+.endorsements {
+    display:grid;
+    place-items: center;
+    color: white;
+    padding: 1rem;
 }
 
-@keyframes endor1 {
+.none {
+    display: none;
+}
+
+/* .grid1 {
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 139, .45);
+    border-radius: 12px;
+    width: 1020px;
+    margin: 1rem;
+    padding: 1rem;
+    animation-duration: 2s;
+    animation-name: fadeIn;
+} */
+
+.grid1 {
+    display:grid;
+    margin: 1rem;
+    place-items: center;
+    border-radius: 12px;
+    width: 1020px;
+    padding: 1rem;
+}
+
+.grid2 {
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    width: 1020px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.backgroundColor0 {
+    background-color: #172947;
+}
+
+.backgroundColor1 {
+    background-color: #3e5972;
+}
+
+.backgroundColor2 {
+    background-color: #435b7f;
+}
+
+.backgroundColor3 {
+    background-color: #4c6584;
+}
+
+.backgroundColor4 {
+    background-color: #3c5870;
+}
+
+.backgroundColor5 {
+    background-color: #0a1d3d;
+}
+
+.backgroundColor6 {
+    background-color: #bacae2;
+}
+
+.backgroundColor7 {
+    background-color: #798b99;
+}
+
+.backgroundColor8 {
+    background-color: #9cabcb;
+}
+
+.backgroundColor9 {
+    background-color: #96aac2;
+}
+
+/* .movement1 {
+    animation-duration: 7s;
+    animation-name: movement1;
+}
+
+.movement2 {
+    animation-duration: 25s;
+    animation-name: movement2;
+}
+
+@keyframes movement1 {
     0% {
-        color:transparent;
-        margin-left: 18rem;
-        margin-top: 10rem;
-        background-color: transparent;
-    }
-    20% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-    }
-    23% {
-        margin-left: 5rem;
-        margin-top: 16rem;
-    }
-    90% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 5rem;
+        background-color:transparent;
+        margin-top: 15rem;
     }
     100% {
-        color:transparent;
-        margin-left: 25rem;
-        margin-top: 16rem;
+        background-color:rgba(3, 3, 37, 0.85);
+        margin-top: 1rem;
     }
 }
 
-.e1p2 {
-    color: transparent;
-    padding-left: 1rem;
-    animation-name: e1p2;
-    animation-duration: 7.5s;
-    animation-delay: 11s;
-}
+@keyframes movement2 {
+    0% {background-color:transparent;}
+    65% {background-color:transparent;}
+    100% {background-color: rgba(27, 27, 97, 0.7);}
+} */
 
-@keyframes e1p2 {
-    0% {
-        color:transparent;
-        margin-left: 18rem;
-        background-color: transparent;
-    }
-    20% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 5rem;
-        padding-left: 1.5rem;
-    }
-    90% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 5rem;
-        padding-left: 1.5rem;
-    }
-    100% {
-        color:white;
-        margin-left: -5rem;
-    }
-}
-
-.e1p3 {
-    color: transparent;
-    padding-left: 1rem;
-    animation-name: e1p3;
-    animation-duration: 6.8s;
-    animation-delay: 15s;
-}
-
-@keyframes e1p3 {
-    0% {
-        color:transparent;
-        margin-left: 16rem;
-        background-color: transparent;
-    }
-    20% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 5rem;
-        padding-left: 1.5rem;
-    }
-    50% {
-        margin-top: 0rem;
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-    }
-    70% {
-        margin-top: -2.4rem;
-    }
-    90% {
-        margin-left: 5rem;
-        padding-left: 1.5rem;
-    }
-    100% {
-        color:white;
-        margin-left: 5rem;
-        margin-top: -2.4rem;
-    }
-}
-
-.e1p4 {
-    color: transparent;
-    padding-left: 1rem;
-    animation-name: e1p4;
-    animation-duration: 8s;
-    animation-delay: 19.5s;
-}
-
-@keyframes e1p4 {
-    0% {
-        color:transparent;
-        margin-left: -16rem;
-        background-color: transparent;
-    }
-    20% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 2rem;
-        padding-left: 1.5rem;
-    }
-    90% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 5rem;
-        padding-left: 1.5rem;
-    }
-    100% {
-        color:white;
-        margin-left: 5rem;
-        margin-top: -4.9rem;
-    }
-}
-
-.e1p5 {
-    color: transparent;
-    padding-left: 1rem;
-    animation-name: e1p5;
-    animation-duration: 9s;
-    animation-delay: 26s;
-}
-
-@keyframes e1p5 {
-    0% {
-        color:transparent;
-        background-color: transparent;
-    }
-
-    20% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 5rem;
-        padding-left: 1.5rem;
-    }
-    90% {
-        color: white;
-        background-color: rgba(0, 0, 139, .2);
-        margin-left: 5rem;
-        padding-left: 1.5rem;
-    }
-    100% {
-        color:white;
-        margin-left: 5rem;
-        margin-top: -7rem;
-    }
-}
-
-.linger1 {
-    color: transparent;
-    animation-name: linger;
-    animation-duration: 6.8s;
-    animation-delay: 15s;
-}
-
-@keyframes linger {
-    0% {color:transparent;}
-    20% {color: white;}
-    50% {
-        margin-top: 0rem;
-        z-index: 0;
-        font-size: 2rem;
-    }
-    70% {
-        color:white;
-        margin-top: -2.4rem;
-        z-index: -1;
-    }
-    90% {        
-        color: rgba(235, 230, 230, .7);
-        margin-top: -2.4rem;
-        font-size: 2.1rem;
-    }
-    100% {
-        color: transparent;
-        z-index: -1;
-    }
-}
-
-.font3 {
+/* .font3 {
     font-size: 2.7rem;
     animation-name: intro;
     animation-duration: 12s;
     animation-delay: 4s;
-}
+} */
 
 .container {
     display: grid;
-    width: 100vw;
+    margin: 1em;
+    width: 98%;
     place-items: center;
     grid-template-columns: auto auto;
 }
@@ -325,370 +282,3 @@ footer {
 }
 
 
-@media screen and (max-width:1700px) {
-    
-    h1 {
-        font-size: 3.5rem;
-    }
-    
-    .cursive {
-        font-size: 5.5rem;
-    }
-    
-    .bold {
-        font-size: 2rem;
-    }
-    
-    p {
-        font-size: 1.6rem;
-    }
-    
-    .font3 {
-        font-size: 2.5rem;
-    }
-
-    
-    @keyframes linger {
-        0% {color:transparent;}
-        20% {color: white;}
-        50% {margin-top: 0rem;}
-        70% {margin-top: -2rem;}
-        90% {font-size: 1.6rem;}
-        100% {
-            color:white;
-            font-size: 2.4rem;
-            margin-top: -2rem;
-        }
-    }
-
-    @keyframes e1p3 {
-        0% {
-            color:transparent;
-            margin-left: 16rem;
-            background-color: transparent;
-        }
-        20% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        50% {
-            margin-top: 0rem;
-        }
-        70% {
-            margin-top: -2rem;
-        }
-        90% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        100% {
-            color:transparent;
-            margin-left: 5rem;
-            margin-top: -2rem;
-        }
-    }
-
-    
-    @keyframes e1p4 {
-        0% {
-            color:transparent;
-            margin-left: -16rem;
-            background-color: transparent;
-        }
-        20% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        90% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        100% {
-            color:transparent;
-            margin-left: 5rem;
-            margin-top: -3.9rem;
-        }
-    }
-
-    @keyframes e1p5 {
-        0% {
-            color:transparent;
-            background-color: transparent;
-            margin-top: -15rem;
-        }
-        28% {
-            margin-left: 5rem;
-            padding-left: 8.5rem;
-            color:transparent;
-            background-color: transparent;
-            margin-top: -8rem;
-        }
-        50% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-        }
-        90% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        100% {
-            color:transparent;
-            margin-left: 5rem;
-            margin-top: -5.35rem;
-        }
-    }
-
-}
-    
-@media screen and (max-width:1500px) {
-
-    body {
-        background-position-y: -18rem;
-    }
-
-    @keyframes storm {
-        from {
-            background-position-y:-16rem;
-            background-position-x:-1rem;
-        }
-        to {
-            background-position-y: -18rem;
-            background-position-x: 0rem;
-        }
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-    
-    .cursive {
-        font-size: 5.5rem;
-    }
-    
-    .bold {
-        font-size: 2rem;
-    }
-    
-    p {
-        font-size: 1.6rem;
-        width: 78%;
-    }
-    
-    .font3 {
-        font-size: 2.5rem;
-    }
-
-    @keyframes endor1 {
-        0% {
-            color:transparent;
-            margin-left: 18rem;
-            margin-top: 10rem;
-            background-color: transparent;
-        }
-        20% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-        }
-        23% {
-            margin-left: 5rem;
-            margin-top: 16rem;
-        }
-        90% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-        }
-        100% {
-            color:transparent;
-            background-color: transparent;
-            margin-left: 15rem;
-            margin-top: 16rem;
-        }
-    }
-
-    
-    @keyframes linger {
-        0% {color:transparent;}
-        20% {color: white;}
-        50% {margin-top: 0rem;}
-        70% {margin-top: -2rem;}
-        90% {font-size: 1.6rem;}
-        100% {
-            color:white;
-            font-size: 2.4rem;
-            margin-top: -2rem;
-        }
-    }
-
-    @keyframes e1p3 {
-        0% {
-            color:transparent;
-            margin-left: 16rem;
-            background-color: transparent;
-        }
-        20% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        50% {
-            margin-top: 0rem;
-        }
-        70% {
-            margin-top: -2rem;
-        }
-        90% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        100% {
-            color:transparent;
-            margin-left: 5rem;
-            margin-top: -2rem;
-        }
-    }
-
-    
-    @keyframes e1p4 {
-        0% {
-            color:transparent;
-            margin-left: -16rem;
-            background-color: transparent;
-        }
-        20% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        90% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        100% {
-            color:transparent;
-            margin-left: 5rem;
-            margin-top: -3.9rem;
-        }
-    }
-
-    @keyframes e1p5 {
-        0% {
-            color:transparent;
-            background-color: transparent;
-            margin-top: -15rem;
-        }
-        28% {
-            margin-left: 5rem;
-            padding-left: 5.5rem;
-            color:transparent;
-            background-color: transparent;
-            margin-top: -8rem;
-        }
-        50% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-        }
-        90% {
-            color: white;
-            background-color: rgba(0, 0, 139, .2);
-            margin-left: 5rem;
-            padding-left: 1.5rem;
-        }
-        100% {
-            color:transparent;
-            margin-left: 5rem;
-            margin-top: -5.35rem;
-        }
-    }
-
-
-}
-
-
-
-@media screen and (max-width:768px) {
-
-    .wrapper {
-        width:768px;
-    }
-    
-    .container {
-        padding-bottom:15px;
-    }
-
-    .container-contact {
-        width:650px;
-        margin:auto;
-    }
-
-    .form-group {
-        width:590px;
-        margin: auto;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-/* These rule take effect when the browser's width is either 640 or less. */
-
-@media screen and (max-width:640px) {
-
-    .wrapper {
-        width:500px;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: center;
-    }
-
-    nav ul {
-        display: flex;
-        padding: 0em;
-    }
-
-    ul {
-        padding-left: 0em;
-    }
-
-    .container-contact {
-        width:450px;
-        margin: 0px, 25px;
-        background-color: maroon
-    }
-
-    .gold-contact {
-        color: gold;
-    }
-
-    .form-group {
-        width:450px;
-        margin: auto;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-    }
-
-    
-} 
