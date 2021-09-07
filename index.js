@@ -1,168 +1,124 @@
-function endorsement () {
+const timeHM = moment().format('ss');
+const timeIntHM = parseInt(timeHM);
+let refresh = 60;
 
-    const timeMin = moment().format('mm');
+console.log (refresh);
+
+if (timeIntHM < 30) {
+    refresh = 30 - timeIntHM;
+}
+
+else {
+    refresh = 60 - timeIntHM;
+}
+
+console.log (refresh);
+
+function endorsementMovement () {
+
+    // let halfmin = 0;
+
     const timeSec = moment().format('ss');
-    console.log(timeMin);
-    console.log(timeSec);
+    const timeInt = parseInt(timeSec);
+    console.log(timeInt);
 
-    const min = timeMin.slice(1,2);
-    const sec = timeSec.slice(0,1);
-    console.log(min);
-    console.log(sec);
+    // const min = timeMin.slice(1,2);
+    // const sec = timeSec.slice(0,1);
 
-    back1 = Math.floor(Math.random()*5);
-    console.log(back1);
-    back2 = Math.floor(Math.random()*5)+5;
-    console.log(back2);
+    const min12 = Math.floor(timeInt/5);
 
-    switch (min) {
-        case '0':
-            $("#endor6").removeClass("grid1");
-            $("#endor5").removeClass("grid2");
-            $("#endor1").addClass("grid1");
-            $("#endor1").addClass("backgroundColor0");
-            $("#endor2").addClass("grid2");
-            $("#endor2").addClass("backgroundColor1");
-        break;
-        case '1':
-            $("#endor1").removeClass("grid1");
-            $("#endor2").removeClass("grid2");
-            $("#endor3").addClass("grid1");
-            $("#endor4").addClass("grid2");
-            $("#endor3").addClass("backgroundColor" + back1);
-            $("#endor4").addClass("backgroundColor" + back2);
-        break;
-        case '2':
-            $("#endor3").removeClass("grid1");
-            $("#endor4").removeClass("grid2");
-            $("#endor5").addClass("grid1");
-            $("#endor6").addClass("grid2");
-            $("#endor5").addClass("backgroundColor" + back1);
-            $("#endor6").addClass("backgroundColor" + back2);
-        break;
-        case '3':
-            $("#endor5").removeClass("grid1");
-            $("#endor6").removeClass("grid2");
-            $("#endor1").addClass("grid1");
-            $("#endor4").addClass("grid2");
-            $("#endor1").addClass("backgroundColor" + back1);
-            $("#endor4").addClass("backgroundColor" + back2);
-        break;
-        case '4':
-            $("#endor1").removeClass("grid1");
-            $("#endor4").removeClass("grid2");
-            $("#endor2").addClass("grid1");
-            $("#endor5").addClass("grid2");
-            $("#endor2").addClass("backgroundColor" + back1);
-            $("#endor5").addClass("backgroundColor" + back2);
-        break;
-        case '5':
-            $("#endor2").removeClass("grid1");
-            $("#endor5").removeClass("grid2");
-            $("#endor3").addClass("grid1");
-            $("#endor6").addClass("grid2");
-            $("#endor3").addClass("backgroundColor" + back1);
-            $("#endor6").addClass("backgroundColor" + back2);
-        break;
-        case '6':
-            $("#endor3").removeClass("grid1");
-            $("#endor6").removeClass("grid2");
-            $("#endor1").addClass("grid1");
-            $("#endor5").addClass("grid2");
-            $("#endor1").addClass("backgroundColor" + back1);
-            $("#endor5").addClass("backgroundColor" + back2);
-        break;
-        case '7':
-            $("#endor1").removeClass("grid1");
-            $("#endor5").removeClass("grid2");
-            $("#endor2").addClass("grid1");
-            $("#endor6").addClass("grid2");
-            $("#endor2").addClass("backgroundColor" + back1);
-            $("#endor6").addClass("backgroundColor" + back2);
-        break;
-        case '8':
-            $("#endor2").removeClass("grid1");
-            $("#endor6").removeClass("grid2");
-            $("#endor3").addClass("grid1");
-            $("#endor4").addClass("grid2");
-            $("#endor3").addClass("backgroundColor" + back1);
-            $("#endor4").addClass("backgroundColor" + back2);
-        break;
-        case '9':
-            $("#endor3").removeClass("grid1");
-            $("#endor4").removeClass("grid2");
-            $("#endor6").addClass("grid1");
-            $("#endor5").addClass("grid2");
-            $("#endor6").addClass("backgroundColor" + back1);
-            $("#endor5").addClass("backgroundColor" + back2);
-        break;
-    }
+    console.log (min12);
 
-    // if (sec === '0' || sec === '1' || sec === '2') {
-    //     $(".grid1").addClass("movement1");
-    //     $(".grid2").addClass("movement2");
-    //     console.log("phase 1");
+    // if (timeInt < 30) {
+        
     // }
 
     // else {
-    //     // $(".grid2").addClass("movement2");
-    //     console.log("phase 2");
+    //     halfmin++
     // }
 
+    // console.log(halfmin);
 
+    let endorNum = Math.floor(Math.random()*6+1);
+    let endorNum2 = Math.floor(Math.random()*6+1);
+
+    let bcRand = Math.floor(Math.random()*4+2);
+
+    console.log("endorsement number", endorNum, endorNum2);
+
+    if (endorNum === endorNum2 && endorNum2 === 6) {
+        endorNum2--
+    }
+
+    else if (endorNum === endorNum2) {
+        endorNum2 ++
+    }
+
+    console.log("endorsement number", endorNum, endorNum2);
+    // localStorage.setItem("backColor" + min12, endorNum);
+
+    // const background0 = localStorage.getItem("backColor0");
+    // const background6 = localStorage.getItem("backColor6");
     
 
-    // if (min === '0' || min === '3' || min === '6' && timeSec < 30) {
-    //     $("#endor1").removeClass("none");
-    //     $("#endor2").removeClass("none");
-    //     $("#endor1").addClass("grid1");
-    //     $("#endor2").addClass("grid2");
-    // }
+    switch (min12) {
+        case 0:
+            $("#endor1").removeClass("grid1 grid2 bc0 bc2 bc3 bc4 bc5");
+            $("#endor2").removeClass("grid1 grid2 bc0 bc2 bc3 bc4 bc5");
+            $("#endor3").removeClass("grid1 grid2 bc0 bc2 bc3 bc4 bc5");
+            $("#endor4").removeClass("grid1 grid2 bc0 bc2 bc3 bc4 bc5");
+            $("#endor5").removeClass("grid1 grid2 bc0 bc2 bc3 bc4 bc5");
+            $("#endor6").removeClass("grid1 grid2 bc0 bc2 bc3 bc4 bc5");
+            $("#endor" + endorNum).addClass("grid1 bc1 colorChange01");
+            $("#endor" + endorNum2).addClass("grid2");
+            $("#endor" + endorNum2).addClass("bc" + bcRand);
+        break;
+        case 1:
 
-    // else if (min === '0' || min === '3' || min === '6' && timeSec >= 30) {
-    //     $("#endor1").removeClass("grid1");
-    //     $("#endor1").addClass("none");
-    //     $("#endor2").removeClass("grid2");
-    //     $("#endor2").addClass("grid1");
-    //     $("#endor3").addClass("grid3");
-    // }
+        break;
+        case 2:
 
-    // else if (timeMin === '1' || min === '4' || min === '7' && timeSec < 30) {
-    //     $("#endor1").addClass("none");
-    //     $("#endor2").addClass("none");
-    //     $("#endor3").addClass("none");
-    //     $("#endor4").addClass("grid");
-    //     $("#endor5").addClass("grid");
-    //     $("#endor6").addClass("none");
-    // }
+        break;
+        case 3:
 
-    // else if (timeMin === '1' || min === '4' || min === '7' && timeSec > 30) {
-    //     $("#endor1").addClass("none");
-    //     $("#endor2").addClass("none");
-    //     $("#endor3").addClass("grid");
-    //     $("#endor4").addClass("grid");
-    //     $("#endor5").addClass("none");
-    //     $("#endor6").addClass("none");
-    // }
+        break;
+        case 4:
 
-    // else if (timeMin === '2' || min === '5' || min === '8' && timeSec < 30) {
-    //     $("#endor1").addClass("none");
-    //     $("#endor2").addClass("grid");
-    //     $("#endor3").addClass("grid");
-    //     $("#endor4").addClass("none");
-    //     $("#endor5").addClass("none");
-    //     $("#endor6").addClass("none");
-    // }
+        break;
+        case 5:
 
-    // else if (timeMin === '2' || min === '5' || min === '8' && timeSec > 30) {
-    //     $("#endor1").addClass("grid");
-    //     $("#endor2").addClass("grid");
-    //     $("#endor3").addClass("none");
-    //     $("#endor4").addClass("none");
-    //     $("#endor5").addClass("none");
-    //     $("#endor6").addClass("none");
-    // }
+        break;
+        case 6:
+            $("#endor1").removeClass("grid1 grid2 bc1 bc2 bc3 bc4 bc5");
+            $("#endor2").removeClass("grid1 grid2 bc1 bc2 bc3 bc4 bc5");
+            $("#endor3").removeClass("grid1 grid2 bc1 bc2 bc3 bc4 bc5");
+            $("#endor4").removeClass("grid1 grid2 bc1 bc2 bc3 bc4 bc5");
+            $("#endor5").removeClass("grid1 grid2 bc1 bc2 bc3 bc4 bc5");
+            $("#endor6").removeClass("grid1 grid2 bc1 bc2 bc3 bc4 bc5");
+            $("#endor" + endorNum).addClass("grid1 bc0 colorChange10");
+            $("#endor" + endorNum2).addClass("grid2");
+            $("#endor" + endorNum2).addClass("bc" + bcRand);
+        break;
+        case 7:
+
+        break;
+        case 8:
+
+        break;
+        case 9:
+
+        break;
+        case 10:
+
+        break;
+        case 11:
+
+        break;
+    }
+
 };
 
-endorsement();
-setInterval(endorsement, 30000);
+
+// endorsement();
+endorsementMovement();
+setInterval(endorsementMovement, 5000);

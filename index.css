@@ -159,17 +159,37 @@ p {
     display: none;
 }
 
-/* .grid1 {
-    display: grid;
-    place-items: center;
-    background-color: rgba(0, 0, 139, .45);
-    border-radius: 12px;
-    width: 1020px;
-    margin: 1rem;
-    padding: 1rem;
-    animation-duration: 2s;
-    animation-name: fadeIn;
+/* .tiny {
+    font-size: ;
 } */
+
+.colorChange10 {
+    animation-name: cc10;
+    animation-duration: 4s;
+}
+
+@keyframes cc10 {
+    from {
+        background-color: #92a7cf;
+    }
+    to {
+        background-color: #2e425f;
+    }
+}
+
+.colorChange01 {
+    animation-name: cc01;
+    animation-duration: 4s;
+}
+
+@keyframes cc01 {
+    from {
+        background-color: #2e425f;
+    }
+    to {
+        background-color: #92a7cf;
+    }
+}
 
 .grid1 {
     display:grid;
@@ -180,6 +200,14 @@ p {
     padding: 1rem;
 }
 
+@keyframes fadeIn1 {
+    0% {background-color: rgba(255,255,255,1);}
+    20% {background-color: rgba(255,255,255,.75);}
+    40% {background-color: rgba(255,255,255,.5);}
+    60% {background-color: rgba(255,255,255,.25);}
+    80% {background-color: rgba(255,255,255,.05);}
+}
+
 .grid2 {
     display: grid;
     place-items: center;
@@ -187,49 +215,35 @@ p {
     width: 1020px;
     margin: 1rem;
     padding: 1rem;
+    animation-name: fadeIn1;
+    animation-duration: 8s;
 }
 
-.backgroundColor0 {
-    background-color: #172947;
+.bc0 {
+    background-color: #2e425f;
 }
 
-.backgroundColor1 {
-    background-color: #3e5972;
+.bc1 {
+    background-color: #92a7cf;
 }
 
-.backgroundColor2 {
-    background-color: #435b7f;
+.bc2 {
+    background-color: #6e88a4;
 }
 
-.backgroundColor3 {
-    background-color: #4c6584;
+.bc3 {
+    background-color: #60728c;
 }
 
-.backgroundColor4 {
-    background-color: #3c5870;
+.bc4 {
+    background-color: #647a9d;
 }
 
-.backgroundColor5 {
+.bc5 {
     background-color: #0a1d3d;
 }
 
-.backgroundColor6 {
-    background-color: #bacae2;
-}
-
-.backgroundColor7 {
-    background-color: #798b99;
-}
-
-.backgroundColor8 {
-    background-color: #9cabcb;
-}
-
-.backgroundColor9 {
-    background-color: #96aac2;
-}
-
-/* .movement1 {
+.movement1 {
     animation-duration: 7s;
     animation-name: movement1;
 }
@@ -242,11 +256,11 @@ p {
 @keyframes movement1 {
     0% {
         background-color:transparent;
-        margin-top: 15rem;
+        font-size: 2rem;
     }
     100% {
-        background-color:rgba(3, 3, 37, 0.85);
-        margin-top: 1rem;
+        background-color: inherit;
+        font-size: inherit;
     }
 }
 
@@ -254,7 +268,7 @@ p {
     0% {background-color:transparent;}
     65% {background-color:transparent;}
     100% {background-color: rgba(27, 27, 97, 0.7);}
-} */
+}
 
 /* .font3 {
     font-size: 2.7rem;
@@ -279,6 +293,20 @@ footer {
     text-align: right;
     color:black;
     padding-bottom: 1rem;
+}
+
+.button {
+    margin: 1rem;
+    border-radius: 12px;
+    padding: 1rem;
+    border: 2px solid rgb(153,129,0);
+    background-color: rgb(153,129,0);
+    color: white;
+    font-size: 28px;
+}
+
+.plain {
+    text-decoration: none;
 }
 
 
