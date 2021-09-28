@@ -7,6 +7,7 @@
 body {
     display: grid;
     place-items: center;
+    background: radial-gradient(circle, rgba(248,249,241,1) 0%, rgba(236,236,228,1) 35%, rgba(198,211,227,1) 70%);
 }
 
 nav {
@@ -14,8 +15,21 @@ nav {
     width: 100%;
     display: grid;
     place-items: center;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-columns: 6fr 1fr 1fr 1fr auto;
     border-bottom: 2px solid rgb(153,129,0);
+}
+
+.audioDiv {
+    display: grid;
+    place-items: center;
+}
+
+.audio {
+    padding:.25em;
+}
+
+.audioOff {
+    padding:.25em;
 }
 
 .justifyLeft {
@@ -119,6 +133,7 @@ h5 {
 
 .mont {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .gold {
@@ -151,44 +166,11 @@ p {
 .endorsements {
     display:grid;
     place-items: center;
-    color: white;
     padding: 1rem;
 }
 
 .none {
     display: none;
-}
-
-/* .tiny {
-    font-size: ;
-} */
-
-.colorChange10 {
-    animation-name: cc10;
-    animation-duration: 4s;
-}
-
-@keyframes cc10 {
-    from {
-        background-color: #92a7cf;
-    }
-    to {
-        background-color: #2e425f;
-    }
-}
-
-.colorChange01 {
-    animation-name: cc01;
-    animation-duration: 4s;
-}
-
-@keyframes cc01 {
-    from {
-        background-color: #2e425f;
-    }
-    to {
-        background-color: #92a7cf;
-    }
 }
 
 .grid1 {
@@ -197,85 +179,152 @@ p {
     place-items: center;
     border-radius: 12px;
     width: 1020px;
-    padding: 1rem;
+    color:#0a1d3d;
 }
 
-@keyframes fadeIn1 {
-    0% {background-color: rgba(255,255,255,1);}
-    20% {background-color: rgba(255,255,255,.75);}
-    40% {background-color: rgba(255,255,255,.5);}
-    60% {background-color: rgba(255,255,255,.25);}
-    80% {background-color: rgba(255,255,255,.05);}
+.span1action {
+    animation-name: spanOne;
+    animation-duration: 30s;
 }
 
-.grid2 {
-    display: grid;
-    place-items: center;
-    border-radius: 12px;
-    width: 1020px;
-    margin: 1rem;
-    padding: 1rem;
-    animation-name: fadeIn1;
-    animation-duration: 8s;
-}
-
-.bc0 {
-    background-color: #2e425f;
-}
-
-.bc1 {
-    background-color: #92a7cf;
-}
-
-.bc2 {
-    background-color: #6e88a4;
-}
-
-.bc3 {
-    background-color: #60728c;
-}
-
-.bc4 {
-    background-color: #647a9d;
-}
-
-.bc5 {
-    background-color: #0a1d3d;
-}
-
-.movement1 {
-    animation-duration: 7s;
-    animation-name: movement1;
-}
-
-.movement2 {
-    animation-duration: 25s;
-    animation-name: movement2;
-}
-
-@keyframes movement1 {
+@keyframes spanOne {
     0% {
-        background-color:transparent;
-        font-size: 2rem;
+        color: transparent;
+    }
+    10% {
+        color:#0a1d3d;
+    }
+    90% {
+        color:#0a1d3d;
     }
     100% {
-        background-color: inherit;
-        font-size: inherit;
+        color: transparent;
     }
 }
 
-@keyframes movement2 {
-    0% {background-color:transparent;}
-    65% {background-color:transparent;}
-    100% {background-color: rgba(27, 27, 97, 0.7);}
+.span2action {
+    animation-name: spanTwo;
+    animation-duration: 30s;
 }
 
-/* .font3 {
-    font-size: 2.7rem;
-    animation-name: intro;
-    animation-duration: 12s;
-    animation-delay: 4s;
-} */
+@keyframes spanTwo {
+    0% {
+        color: transparent;
+    }
+    5% {
+        color: transparent;
+    }
+    15% {
+        color:#0a1d3d;
+    }
+    90% {
+        color:#0a1d3d;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span3action {
+    animation-name: spanThree;
+    animation-duration: 30s;
+}
+
+@keyframes spanThree {
+    0% {
+        color: transparent;
+    }
+    15% {
+        color: transparent;
+    }
+    25% {
+        color:#0a1d3d;
+    }
+    50% {
+        color:#0a1d3d;
+    }
+    60% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span4action {
+    animation-name: spanFour;
+    animation-duration: 30s;
+}
+
+@keyframes spanFour {
+    0% {
+        color: transparent;
+    }
+    40% {
+        color: transparent;
+    }
+    50% {
+        color: #0a1d3d;
+    }
+    75% {
+        color: #0a1d3d;
+    }
+    85% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span5action {
+    animation-name: spanFive;
+    animation-duration: 30s;
+}
+
+@keyframes spanFive {
+    0% {
+        color: transparent;
+    }
+    60% {
+        color: transparent;
+    }
+    70% {
+        color: #0a1d3d;
+    }
+    95% {
+        color: #0a1d3d;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.sizeUp {
+    animation-name: size28;
+    animation-duration: 30s;
+}
+
+@keyframes size28 {
+    0% {
+        color: transparent;
+    }
+    15% {
+        color: transparent;
+    }
+    25% {
+        color:#0a1d3d;
+    }
+    50% {
+        color:#0a1d3d;
+    }
+    85% {
+        color: #0a1d3d;
+    }
+    100% {
+        color: transparent;
+    }
+}
 
 .container {
     display: grid;
@@ -308,5 +357,3 @@ footer {
 .plain {
     text-decoration: none;
 }
-
-
