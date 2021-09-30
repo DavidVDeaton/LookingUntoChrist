@@ -77,21 +77,34 @@ function endorsementMovement () {
     $("#endor4").removeClass("grid1");
     $("#endor5").removeClass("grid1");
     $("#endor6").removeClass("grid1");
+
     $(".span1").removeClass("span1action");
+    $(".span1s").removeClass("span1Saction");
     $(".span2").removeClass("span2action");
+    $(".span2d").removeClass("span2Daction");
+    $(".span26").removeClass("span26action");
     $(".span3").removeClass("span3action");
+    $(".span3d").removeClass("span3Daction");
     $(".span4").removeClass("span4action");
+    $(".span46").removeClass("span46action");
     $(".span5").removeClass("span5action");
-    $(".span6").removeClass("span6action");
     $(".highlight").removeClass("sizeUp");
+    $(".special").removeClass("specialaction");
+
     $("#endor" + endorNum).addClass("grid1");
+
     $(".span1").addClass("span1action");
+    $(".span1s").addClass("span1Saction");
     $(".span2").addClass("span2action");
+    $(".span2d").addClass("span2Daction");
+    $(".span26").addClass("span26action");
     $(".span3").addClass("span3action");
+    $(".span3d").addClass("span3Daction");
     $(".span4").addClass("span4action");
+    $(".span46").addClass("span46action");
     $(".span5").addClass("span5action");
-    $(".span6").addClass("span6action");
     $(".highlight").addClass("sizeUp");
+    $(".special").addClass("specialaction");
 
 };
 

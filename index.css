@@ -131,7 +131,7 @@ p {
     place-items: center;
     border-radius: 12px;
     max-width: 1020px;
-    color:#0a1d3d;
+    color: transparent;
 }
 
 .span1action {
@@ -150,6 +150,26 @@ p {
         color:#0a1d3d;
     }
     100% {
+        color: transparent;
+    }
+}
+
+.span1Saction {
+    animation-name: spanOneS;
+    animation-duration: 30s;
+}
+
+@keyframes spanOneS {
+    0% {
+        color: transparent;
+    }
+    10% {
+        color:#0a1d3d;
+    }
+    88% {
+        color:#0a1d3d;
+    }
+    95% {
         color: transparent;
     }
 }
@@ -206,6 +226,92 @@ p {
     }
 }
 
+.span2Daction {
+    animation-name: spanTwoD;
+    animation-duration: 30s;
+}
+
+@keyframes spanTwoD {
+    0% {
+        color: transparent;
+    }
+    5% {
+        color: transparent;
+    }
+    15% {
+        color:#0a1d3d;
+    }
+    45% {
+        color:#0a1d3d;
+    }
+    52% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.specialaction {
+    animation-name: special;
+    animation-duration: 30s;
+}
+
+@keyframes special {
+    0% {
+        color: transparent;
+    }
+    5% {
+        color: transparent;
+    }
+    15% {
+        color:#0a1d3d;
+    }
+    45% {
+        color:#0a1d3d;
+    }
+    52% {
+        color: transparent;
+    }
+    92% {
+        color: transparent;
+        font-size: 24px;
+    }
+    95% {
+        color: #0a1d3d;
+    }
+    100% {
+        color: #0a1d3d;
+        font-size: 26px;
+    }
+}
+
+.span3Daction {
+    animation-name: spanThreeD;
+    animation-duration: 30s;
+}
+
+@keyframes spanThreeD {
+    0% {
+        color: transparent;
+    }
+    15% {
+        color: transparent;
+    }
+    25% {
+        color:#0a1d3d;
+    }
+    65% {
+        color:#0a1d3d;
+    }
+    72% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
 .span4action {
     animation-name: spanFour;
     animation-duration: 30s;
@@ -255,13 +361,25 @@ p {
     }
 }
 
-.span6action {
-    animation-name: spanSix;
+.span26action {
+    animation-name: span2Six;
     animation-duration: 30s;
 }
 
-@keyframes spanSix {
+@keyframes span2Six {
     0% {
+        color: transparent;
+    }
+    5% {
+        color: transparent;
+    }
+    15% {
+        color:#0a1d3d;
+    }
+    35% {
+        color:#0a1d3d;
+    }
+    45% {
         color: transparent;
     }
     85% {
@@ -275,6 +393,43 @@ p {
     }
     100% {
         color: transparent;
+    }
+}
+
+.span46action {
+    animation-name: span4Six;
+    animation-duration: 30s;
+}
+
+@keyframes span4Six {
+    0% {
+        color: transparent;
+    }
+    40% {
+        color: transparent;
+    }
+    50% {
+        color: #0a1d3d;
+    }
+    80% {
+        color: #0a1d3d;
+    }
+    85% {
+        font-size: 24px;
+    }
+    90% {
+        color: transparent;
+    }
+    95% {
+        color: #0a1d3d;
+        font-size: 28px;
+    }
+    97% {
+        color: #0a1d3d;
+    }
+    100% {
+        color: transparent;
+        font-size: 28px;
     }
 }
 
@@ -295,12 +450,17 @@ p {
     }
     50% {
         color:#0a1d3d;
+        font-size: 24px;
     }
-    85% {
+    80% {
         color: #0a1d3d;
+        font-size: 26px;
+    }
+    93% {
+        color: transparent;
     }
     100% {
-        color: transparent;
+        font-size: 26px;
     }
 }
 
