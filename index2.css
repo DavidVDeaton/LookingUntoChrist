@@ -1,0 +1,544 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle, rgba(248,249,241,1) 0%, rgba(236,236,228,1) 35%, rgba(198,211,227,1) 70%);
+}
+
+nav {
+    padding: .5em;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto auto auto;
+    border-bottom: 4px solid rgb(218,180,81);
+    background-color: rgb(18, 44, 79);
+}
+
+.audioDiv {
+    display: grid;
+    place-items: center;
+}
+
+.audio {
+    padding:.25em;
+}
+
+.audioOff {
+    padding:.25em;
+}
+
+.justifyLeft {
+    justify-self: start;
+}
+
+.justifyCenter {
+    justify-self: center;
+}
+
+.border {
+    width: 650px;
+}
+
+.storm {
+    display: grid;
+    place-items: center;
+}
+
+img {
+    width: 580px;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: .5rem;
+
+}
+
+h2 {
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    padding: .5rem;
+}
+
+h4 {
+    font-size: 2rem;
+    padding: .3rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    padding: .15rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+    margin: .15rem .15rem .5rem 2rem;
+    padding-right: 1.5rem;
+    place-self: start;
+    border-bottom: 1px solid rgb(153,129,0);
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.cursive {
+    font-family: 'Tangerine', cursive;
+}
+
+.mont {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.gold {
+    color: rgb(153,129,0);
+}
+
+.sideBorder {
+    border-left: 2px solid rgb(153,129,0);
+    border-right: 2px solid rgb(153,129,0);
+}
+
+.border {
+    padding: .5rem;
+    display: grid;
+    color: transparent;
+}
+
+.bold {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+}
+
+p {
+    width: 95%;
+    font-size: 1.5rem;
+}
+
+.bookImg {
+    display:grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.none {
+    display: none;
+}
+
+.grid1 {
+    display:grid;
+    margin: 1rem;
+    place-items: center;
+    border-radius: 12px;
+    max-width: 1020px;
+    color: transparent;
+}
+
+.span1action {
+    animation-name: spanOne;
+    animation-duration: 30s;
+}
+
+@keyframes spanOne {
+    0% {
+        color: transparent;
+    }
+    10% {
+        color:#0a1d3d;
+    }
+    90% {
+        color:#0a1d3d;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span1Saction {
+    animation-name: spanOneS;
+    animation-duration: 30s;
+}
+
+@keyframes spanOneS {
+    0% {
+        color: transparent;
+    }
+    10% {
+        color:#0a1d3d;
+    }
+    88% {
+        color:#0a1d3d;
+    }
+    95% {
+        color: transparent;
+    }
+}
+
+.span2action {
+    animation-name: spanTwo;
+    animation-duration: 30s;
+}
+
+@keyframes spanTwo {
+    0% {
+        color: transparent;
+    }
+    5% {
+        color: transparent;
+    }
+    15% {
+        color:#0a1d3d;
+    }
+    35% {
+        color:#0a1d3d;
+    }
+    45% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span3action {
+    animation-name: spanThree;
+    animation-duration: 30s;
+}
+
+@keyframes spanThree {
+    0% {
+        color: transparent;
+    }
+    15% {
+        color: transparent;
+    }
+    25% {
+        color:#0a1d3d;
+    }
+    50% {
+        color:#0a1d3d;
+    }
+    60% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span2Daction {
+    animation-name: spanTwoD;
+    animation-duration: 30s;
+}
+
+@keyframes spanTwoD {
+    0% {
+        color: transparent;
+    }
+    5% {
+        color: transparent;
+    }
+    15% {
+        color:#0a1d3d;
+    }
+    45% {
+        color:#0a1d3d;
+    }
+    52% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.specialaction {
+    animation-name: special;
+    animation-duration: 30s;
+}
+
+@keyframes special {
+    0% {
+        color: transparent;
+    }
+    5% {
+        color: transparent;
+    }
+    15% {
+        color:#0a1d3d;
+    }
+    45% {
+        color:#0a1d3d;
+    }
+    52% {
+        color: transparent;
+    }
+    92% {
+        color: transparent;
+        font-size: 24px;
+    }
+    95% {
+        color: #0a1d3d;
+    }
+    100% {
+        color: #0a1d3d;
+        font-size: 26px;
+    }
+}
+
+.span3Daction {
+    animation-name: spanThreeD;
+    animation-duration: 30s;
+}
+
+@keyframes spanThreeD {
+    0% {
+        color: transparent;
+    }
+    15% {
+        color: transparent;
+    }
+    25% {
+        color:#0a1d3d;
+    }
+    65% {
+        color:#0a1d3d;
+    }
+    72% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span4action {
+    animation-name: spanFour;
+    animation-duration: 30s;
+}
+
+@keyframes spanFour {
+    0% {
+        color: transparent;
+    }
+    40% {
+        color: transparent;
+    }
+    50% {
+        color: #0a1d3d;
+    }
+    80% {
+        color: #0a1d3d;
+    }
+    90% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span5action {
+    animation-name: spanFive;
+    animation-duration: 30s;
+}
+
+@keyframes spanFive {
+    0% {
+        color: transparent;
+    }
+    60% {
+        color: transparent;
+    }
+    70% {
+        color: #0a1d3d;
+    }
+    95% {
+        color: #0a1d3d;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span26action {
+    animation-name: span2Six;
+    animation-duration: 30s;
+}
+
+@keyframes span2Six {
+    0% {
+        color: transparent;
+    }
+    5% {
+        color: transparent;
+    }
+    15% {
+        color:#0a1d3d;
+    }
+    35% {
+        color:#0a1d3d;
+    }
+    45% {
+        color: transparent;
+    }
+    85% {
+        color: transparent;
+    }
+    95% {
+        color: #0a1d3d;
+    }
+    97% {
+        color: #0a1d3d;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+.span46action {
+    animation-name: span4Six;
+    animation-duration: 30s;
+}
+
+@keyframes span4Six {
+    0% {
+        color: transparent;
+    }
+    40% {
+        color: transparent;
+    }
+    50% {
+        color: #0a1d3d;
+    }
+    80% {
+        color: #0a1d3d;
+    }
+    85% {
+        font-size: 24px;
+    }
+    90% {
+        color: transparent;
+    }
+    95% {
+        color: #0a1d3d;
+        font-size: 28px;
+    }
+    97% {
+        color: #0a1d3d;
+    }
+    100% {
+        color: transparent;
+        font-size: 28px;
+    }
+}
+
+.sizeUp {
+    animation-name: size28;
+    animation-duration: 30s;
+}
+
+@keyframes size28 {
+    0% {
+        color: transparent;
+    }
+    15% {
+        color: transparent;
+    }
+    25% {
+        color:#0a1d3d;
+    }
+    50% {
+        color:#0a1d3d;
+        font-size: 24px;
+    }
+    80% {
+        color: #0a1d3d;
+        font-size: 26px;
+    }
+    93% {
+        color: transparent;
+    }
+    100% {
+        font-size: 26px;
+    }
+}
+
+.container {
+    display: grid;
+    margin: 1em;
+    width: 98%;
+    place-items: center;
+    grid-template-columns: auto auto;
+}
+
+footer {
+    position: fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    text-align: right;
+    color:black;
+    padding-bottom: 1rem;
+}
+
+.button {
+    margin: .15rem;
+    border-radius: 0px 12px 0px 12px;
+    padding: .75rem;
+    border: 2px solid rgb(153,129,0);
+    background-color: transparent;
+    color: rgb(153,129,0);
+    font-size: 28px;
+    transition-duration: .8s;
+}
+
+.button:hover {
+    border-radius: 12px 0px 12px 0px;
+}
+
+.fancyBorder {
+    display: grid;
+    place-items: center;
+    border-radius: 12px 0px 12px 0px;
+    border: 2px solid rgb(153,129,0);
+    margin: .5rem;
+    transition-duration: .8s;
+}
+
+.fancyBorder:hover {
+    border-radius: 0px 12px 0px 12px;
+}
+
+.plain {
+    text-decoration: none;
+}
+
+.selectedReviews {
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.postedReview {
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    max-width: 800px;
+    min-width: 375px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+}
