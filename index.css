@@ -80,6 +80,7 @@ h3 {
 h4 {
     font-size: 2rem;
     padding: .3rem;
+    color:rgb(18, 44, 79)
 }
 
 h5 {
@@ -92,6 +93,7 @@ h5 {
 h6 {
     font-size: 1.1rem;
     padding: .15rem;
+    color:rgb(18, 44, 79)
 }
 
 .font20 {
