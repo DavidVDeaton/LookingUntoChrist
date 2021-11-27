@@ -25,6 +25,11 @@ body {
     padding: 2em;
 }
 
+.divider {
+    width: 150px;
+    border-bottom: 2px solid rgb(218,180, 81);
+}
+
 .blueBorder {
 
     height: 470px;
