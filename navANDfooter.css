@@ -1,0 +1,31 @@
+nav {
+    padding: .5em;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto auto auto;
+    border-bottom: 4px solid rgb(218,180,81);
+    background-color: rgb(18, 44, 79);
+}
+
+.justifyLeft {
+    justify-self: start;
+}
+
+.plain {
+    text-decoration: none;
+}
+
+.gold {
+    color: rgb(218,180,81);
+}
+
+footer {
+    padding: .5em;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    border-top: 4px solid rgb(218,180,81);
+    background-color: rgb(18, 44, 79);
+}
