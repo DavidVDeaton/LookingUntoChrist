@@ -138,13 +138,6 @@ h4 {
     color:rgb(18, 44, 79)
 }
 
-h5 {
-    font-size: 1.2rem;
-    padding: .15rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-}
-
 h6 {
     font-size: 1.1rem;
     padding: .15rem;
@@ -169,10 +162,6 @@ p {
 
 .font {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.gold {
-    color: rgb(218,180,81);
 }
 
 .blue {
