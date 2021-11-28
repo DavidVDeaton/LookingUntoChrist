@@ -123,7 +123,6 @@ img {
     object-fit: cover;
     object-position: center top;
     border: 14px solid rgba(18,44,79);
-    justify-self: start;
 }
 
 .resize {
