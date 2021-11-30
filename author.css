@@ -63,8 +63,8 @@ p {
 
 .purpose {
     display: grid;
-    place-items: center;
-    column-gap: 30px;
+    place-items: start;
+    column-gap: 20px;
     grid-template-columns: 1fr 1fr;
     width: 85%;
     margin: 2em 0em;
@@ -85,20 +85,27 @@ h1 {
 
 .divider {
     width: 150px;
-    border-bottom: 2px solid rgb(218,180, 81);
+    border-bottom: 1px solid rgb(218,180, 81);
+    border-top: 1px solid rgb(218,180, 81);
     margin-bottom: 1em;
 }
 
 .specialDivider {
     width: 150px;
-    border-bottom: 2px solid #ffffff;
-    margin-bottom: .15em;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    margin: .25em 0em;
 }
 
 li {
     list-style-type: none;
     font-size: 18px;
     line-height: 24px;
+    padding-left: 1.4rem;
+}
+
+.blue {
+    color:rgb(18,44,79);
 }
 
 .bold {
