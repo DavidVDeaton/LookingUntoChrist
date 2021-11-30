@@ -10,6 +10,10 @@ body {
     min-height: 100%;
     grid-template-rows: auto 1fr auto;
     background-color: rgb(234, 234, 234);
+    background-image: url("images/LUCIET_Mockup-Front_Back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -5px;
 }
 
 h3 {
@@ -38,20 +42,19 @@ h5 {
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 15px;
-    padding: .75rem;
+    padding: .75em;
     border-radius: 5px;
     margin-bottom: 1.5em;
     background-color: rgba(234, 234, 234, .7);
+    width: 80%;    
 }
 
 .container {
     display: grid;
     width: 100%;
     place-items: center;
-    padding: 30em 10em;
-    background-image: url("images/LUCIET_Mockup-Front_Back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 100vh;
+    margin: 8em 0em;
 }
 
 .version {
