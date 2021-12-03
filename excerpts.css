@@ -31,7 +31,7 @@ h3 {
     line-height: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    transition-duration: .25s;
+    transition-duration: .5s;
 }
 
 h3:hover {
@@ -45,16 +45,44 @@ h5 {
     font-weight: bolder;
 }
 
+.subDiv {
+    display: grid;
+    place-items: center;
+    column-gap: 20px;
+    width: 80%;
+    grid-template-columns: auto 1fr;
+}
+
 .column1 {
     display: grid;
     place-items: start;
     background-color: rgb(218,180, 81);
-    padding: 20px;
+    padding: 20px 20px;
     border-radius: 5px;
 
+}
+
+.column2 {
+    display: grid;
+    place-items: center;
+    background-color: rgb(18, 44, 79);
+    padding: 20px 20px;
+    border-radius: 5px;
+    min-height: 600px;
+}
+
+#clip {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .selected {
     background-color: #FFFFFF;
     border-radius: 5px;
+}
+
+
+.blue {
+    color: rgb(18, 44, 79);
 }
