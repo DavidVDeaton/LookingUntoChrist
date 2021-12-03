@@ -47,7 +47,7 @@ h5 {
     border-radius: 5px;
     margin-top: 1em;
     background-color: rgba(234, 234, 234, .7);
-    width: 1240px;    
+    width: 100%;    
 }
 
 .container {
@@ -108,16 +108,10 @@ h5 {
     border-radius: 5px;
     display: grid;
     place-items: center;
+    width: 80%;
 }
 
 .frontBack {
-    width: 1240px;
+    width:100%;
     border-radius: 5px;
-}
-
-.halves {
-    display: grid;
-    place-items: center;
-    grid-template-rows: 1fr auto;
-    width: 85%;
 }
