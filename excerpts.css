@@ -6,7 +6,6 @@
 
 .container {
     display: grid;
-    margin: 1em;
     width: 100%;
     place-items: center;
 }
@@ -14,6 +13,13 @@
 h1 {
     font-size: 3.6rem;
     padding: .4rem;
+    color: rgb(218,180, 81);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 2.4rem;
+    padding: .4rem .4rem 1.4rem .4rem;
     color: rgb(218,180, 81);
     font-family: 'Montserrat', sans-serif;
 }
@@ -51,7 +57,7 @@ h6 {
     font-style: italic;
 }
 
-.subDiv {
+.excerptDiv {
     display: grid;
     place-items: center;
     column-gap: 20px;
@@ -92,4 +98,211 @@ h6 {
 
 .blue {
     color: rgb(18, 44, 79);
+}
+
+.diagramDiv {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(18, 44, 79);
+}
+
+.nine {
+    display: grid;
+    place-items: center;
+    height: 200px;
+    width: 80%;
+    background-color: rgb(18, 44, 79);
+    grid-template-columns: auto 1fr auto 1fr auto 1fr auto 1fr auto;
+    column-gap: 4px;
+}
+
+.goldDiagramBorder {
+    border: 3px solid rgb(218, 180, 81);
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.goldDiagramBorderSm {
+    border: 2px solid rgb(218, 180, 81);
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.rotateDown {
+    transform: rotate(45deg);
+    animation-name: rotateD;
+    animation-duration: 1s;
+}
+
+.rotateUp {
+    transform: rotate(-45deg);
+    animation-name: rotateU;
+    animation-duration: 1s;
+}
+
+@keyframes rotateU {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-5deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(-15deg);
+    }
+    40% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(-25deg);
+    }
+    60% {
+        transform: rotate(-30deg);
+    }
+    70% {
+        transform: rotate(-35deg);
+    }
+    80% {
+        transform: rotate(-40deg);
+    }
+    90% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes rotateD {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(5deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(25deg);
+    }
+    60% {
+        transform: rotate(30deg);
+    }
+    70% {
+        transform: rotate(35deg);
+    }
+    80% {
+        transform: rotate(40deg);
+    }
+    90% {
+        transform: rotate(45deg);
+    }
+}
+
+.start {
+    margin-bottom: 90px;
+    animation-name: up;
+    animation-duration: 1s;
+}
+
+@keyframes up {
+    0% {
+        margin-bottom: 0px;
+    }
+    10% {
+        margin-bottom: 10px;
+    }
+    20% {
+        margin-bottom: 20px;
+    }
+    30% {
+        margin-bottom: 30px;
+    }
+    40% {
+        margin-bottom: 40px;
+    }
+    50% {
+        margin-bottom: 50px;
+    }
+    60% {
+        margin-bottom: 60px;
+    }
+    70% {
+        margin-bottom: 70px;
+    }
+    80% {
+        margin-bottom: 80px;
+    }
+    90% {
+        margin-bottom: 90px;
+    }
+}
+
+.end {
+    margin-top: 90px;
+    animation-name: down;
+    animation-duration: 1s;
+}
+
+@keyframes down {
+    0% {
+        margin-top: 0px;
+    }
+    10% {
+        margin-top: 10px;
+    }
+    20% {
+        margin-top: 20px;
+    }
+    30% {
+        margin-top: 30px;
+    }
+    40% {
+        margin-top: 40px;
+    }
+    50% {
+        margin-top: 50px;
+    }
+    60% {
+        margin-top: 60px;
+    }
+    70% {
+        margin-top: 70px;
+    }
+    80% {
+        margin-top: 80px;
+    }
+    90% {
+        margin-top: 90px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.step2 {
+    display:grid;
+    place-items: center;
+}
+
+.dual {
+    display:grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
 }

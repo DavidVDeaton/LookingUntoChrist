@@ -85,3 +85,10 @@ $("#ex10").click(function () {
     $("#clip").append("<p>Wait. It gets better. “And Jesus, immediately knowing in himself that virtue had gone out of him, turned him about in the press, and said, Who touched my clothes?” At this statement, Peter and His disciples are stunned and mystified. Here is Jesus, surrounded by a mob, pushed, jostled and pressed upon from every angle as in an adoring mosh pit, and he’s asking, “who touched me?” The disciples are thinking, “What? Who touched you? They all touched you. Everybody did. Everybody’s laying their hands on you. You’re being mauled!” “And Jesus said, ‘Somebody hath touched me: for I perceive that virtue is gone out of me’” (Luke 8:46, emphasis added). Now we arrive at the crux of this miracle and the glorious good news it holds out for all of us. The word translated “virtue” by the King James translators is “dunamis,” from the root word “dunami,” meaning force or power, the same root of the word dynamo in English. At the moment the woman touched the border of Christ’s garment, there was an actual transfer of power from the body of the Lord to the body of the woman! He felt it! She felt it—“she felt in her body that she was healed of that plague.” He that hath ears, let him hear and ponder.</p><h6>Page 338</h6>");
 
 });
+
+$(".diagramDiv").hover(function () {
+
+    $("#noHover").addClass("hidden");
+    $("#hover").removeClass("hidden");
+
+})
