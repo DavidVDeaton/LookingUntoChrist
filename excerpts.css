@@ -45,6 +45,12 @@ h5 {
     font-weight: bolder;
 }
 
+h6 {
+    font-size: 1.2rem;
+    padding: .5rem;
+    font-style: italic;
+}
+
 .subDiv {
     display: grid;
     place-items: center;
@@ -75,6 +81,7 @@ h5 {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
+    color: rgb(18, 44, 79);
 }
 
 .selected {
