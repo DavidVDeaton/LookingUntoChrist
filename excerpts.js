@@ -86,9 +86,16 @@ $("#ex10").click(function () {
 
 });
 
-$(".diagramDiv").hover(function () {
+$(".firstLook").hover(function () {
 
     $("#noHover").addClass("hidden");
     $("#hover").removeClass("hidden");
+
+})
+
+$(".secondLook").hover(function () {
+   
+    $("#secondNoHover").addClass("hidden");
+    $("#secondHover").removeClass("hidden");
 
 })
