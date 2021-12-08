@@ -102,6 +102,7 @@ body {
     place-items: center;
     grid-template-rows: 1fr auto auto;
     padding-bottom: 40px;
+    text-align: center;
 }
 
 /* Image Containers and Widths */
