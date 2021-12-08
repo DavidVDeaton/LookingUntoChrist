@@ -7,9 +7,24 @@
 .container {
     display: grid;
     width: 100%;
+    min-height: 100vh;
     place-items: center;
 }
 
+h1 {
+    font-size: 3.6rem;
+    padding: .4rem;
+    color: rgb(218,180, 81);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1.5rem;
+}
+
+.divider {
+    width: 150px;
+    border-bottom: 1px solid rgb(218,180, 81);
+    border-top: 1px solid rgb(218,180, 81);
+    margin-bottom: 1em;
+}
 
 h5 {
     font-size: 1.2rem;
@@ -46,13 +61,15 @@ p {
     display:grid;
     place-items: center;
     padding:.75rem;
+    min-height: 450px;
+    width: 500px;
 }
 
 .row1 {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
-    width: 80%;
+    width: 1100px;
     margin: 2rem;
     column-gap: 30px;
 }
@@ -63,6 +80,7 @@ p {
     place-items: center;
     transition-duration: .4s;
     border-radius: 5px;
+    margin-bottom: 1.5rem;
 }
 
 .row1col2 {
@@ -81,4 +99,93 @@ p {
     display:grid;
     place-items: end;
     padding: 1rem;
+}
+
+
+.rsvpSection {
+    display:grid;
+    place-items: center;
+}
+
+.submitBTN {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background-color: rgb(218,180, 81);
+    border: 2px solid rgb(218, 180, 81);
+    transition-duration: .4s;
+    padding: 10px 25px;
+}
+
+.submitBTN:hover {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+.inputMargin {
+    margin: 8px 5px;
+}
+
+.inputPadding {
+    padding: 3px 8px;
+}
+
+.lineHeight {
+    line-height: 30px;
+}
+
+.paddingLeft {
+    padding-left: 15px;
+}
+
+.paddingRightSm {
+    padding-right: 5px;
+}
+
+.formWidth {
+    width: 95%;
+}
+
+label {
+    color:rgb(18, 44, 79);
+}
+
+input, textarea {
+    color: rgb(18, 44, 79);
+    border: 2px solid rgb(18, 44, 79);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 0px 0px 10px 0px;
+}
+
+.smMargin {
+    margin: 2.5px;
+}
+
+.bottomMargin {
+    margin-bottom: 15px;
+}
+
+.smBlueBorder {
+    border: 2px solid rgb(18, 44, 79);
+}
+
+.medium {
+    width: 750px;
+}
+
+form {
+    width: 440px;
+}
+
+.font14 {
+    font-size: 14px;
 }
