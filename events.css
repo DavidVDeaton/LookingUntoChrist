@@ -54,4 +54,31 @@ p {
     grid-template-columns: 1fr 1fr;
     width: 80%;
     margin: 2rem;
+    column-gap: 30px;
+}
+
+.goldBorderThick {
+    border: 8px solid rgb(218,180,81);
+    display:grid;
+    place-items: center;
+    transition-duration: .4s;
+    border-radius: 5px;
+}
+
+.row1col2 {
+    display: grid;
+    place-items: center;
+}
+
+.row1col2Container {
+    display: grid;
+    place-items: start;
+    width: 100%;
+    max-width: 600px;
+}
+
+.bookImg {
+    display:grid;
+    place-items: end;
+    padding: 1rem;
 }
