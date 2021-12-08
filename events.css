@@ -79,7 +79,6 @@ p {
     display:grid;
     place-items: center;
     transition-duration: .4s;
-    border-radius: 5px;
     margin-bottom: 1.5rem;
 }
 
