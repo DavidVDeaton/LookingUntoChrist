@@ -4,49 +4,13 @@
     box-sizing: border-box;
 }
 
+/* Sections and Containers */
+
 .container {
     display: grid;
     width: 100%;
     min-height: 100vh;
     place-items: center;
-}
-
-h1 {
-    font-size: 3.6rem;
-    padding: .4rem;
-    color: rgb(218,180, 81);
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 1.5rem;
-}
-
-.divider {
-    width: 150px;
-    border-bottom: 1px solid rgb(218,180, 81);
-    border-top: 1px solid rgb(218,180, 81);
-    margin-bottom: 1em;
-}
-
-h5 {
-    font-size: 1.2rem;
-    padding: .15rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-}
-
-h3 {
-    font-size: 1.5rem;
-    padding: .5rem;
-    line-height: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    text-align: center;
-}
-
-p {
-    font-size: 18px;
-    color: rgb(18, 44, 79);
-    padding: .25em;
-    text-align: center;
 }
 
 .goldBorder {
@@ -60,9 +24,9 @@ p {
     margin: 3.5px;
     display:grid;
     place-items: center;
-    padding:.75rem;
+    padding:.75rem 0rem;
     min-height: 450px;
-    width: 500px;
+    width: 510px;
 }
 
 .row1 {
@@ -94,17 +58,80 @@ p {
     max-width: 600px;
 }
 
-.bookImg {
-    display:grid;
-    place-items: end;
-    padding: 1rem;
-}
-
-
 .rsvpSection {
     display:grid;
     place-items: center;
 }
+
+.center {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 0px 0px 10px 0px;
+}
+
+.bookImg {
+    display:grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.display450 {
+    display: none;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 3.6rem;
+    padding: .4rem;
+    color: rgb(218,180, 81);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1.5rem;
+}
+
+h2{
+    font-size: 1.3rem;
+    padding: .15rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: rgb(18, 44, 79);
+}
+
+h3 {
+    font-size: 1.3rem;
+    padding: .4rem;
+    line-height: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(18, 44, 79);
+}
+
+/* HTML Elements */
+
+p {
+    font-size: 18px;
+    color: rgb(18, 44, 79);
+    padding: .25em;
+    text-align: center;
+}
+
+label {
+    color:rgb(18, 44, 79);
+    padding-left: 6px;
+}
+
+input, textarea {
+    color: rgb(18, 44, 79);
+    border: 2px solid rgb(18, 44, 79);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Buttons */
 
 .submitBTN {
     font-family: 'Montserrat', sans-serif;
@@ -120,6 +147,8 @@ p {
     font-weight: bolder;
     background-color: transparent;
 }
+
+/* Margins and Paddings */
 
 .inputMargin {
     margin: 8px 5px;
@@ -145,26 +174,6 @@ p {
     width: 95%;
 }
 
-label {
-    color:rgb(18, 44, 79);
-}
-
-input, textarea {
-    color: rgb(18, 44, 79);
-    border: 2px solid rgb(18, 44, 79);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-}
-
-.center {
-    display: grid;
-    place-items: center;
-    background-color: #ffffff;
-    border-radius: 3px;
-    padding: 8px;
-    margin: 0px 0px 10px 0px;
-}
-
 .smMargin {
     margin: 2.5px;
 }
@@ -173,9 +182,25 @@ input, textarea {
     margin-bottom: 15px;
 }
 
+.parenthesis {
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+/* Border */
+
+.divider {
+    width: 150px;
+    border-bottom: 1px solid rgb(218,180, 81);
+    border-top: 1px solid rgb(218,180, 81);
+    margin-bottom: 1em;
+}
+
 .smBlueBorder {
     border: 2px solid rgb(18, 44, 79);
 }
+
+/* Widths */
 
 .medium {
     width: 750px;
@@ -185,6 +210,317 @@ form {
     width: 440px;
 }
 
-.font14 {
-    font-size: 14px;
+/* Fonts */
+
+.times {
+    font-family:'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width:1185px) {
+
+    .row1 {
+        margin: 1rem .2rem;
+        column-gap: 10px;
+        width: 1000px;
+    }
+
+    .blueBorder {
+        width: 475px;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .times {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:1030px) {
+
+    .row1 {
+        margin: 1rem .2rem;
+        column-gap: 10px;
+        width: 950px;
+    }
+
+    .blueBorder {
+        width: 450px;
+    }
+
+    h2{
+        font-size: 1.1rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .times {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    form {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:975px) {
+
+    .row1 {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        column-gap: 0px;
+        row-gap: 15px;
+        width: 90%;
+    }
+
+    h2{
+        font-size: 1.3rem;
+        padding: .15rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+        padding: .4rem;
+        line-height: 35px;
+    }
+
+    .times {
+        font-size: 1.5rem;
+    }
+
+    .blueBorder {
+        padding:.75rem 1rem;
+        min-height: 450px;
+        width: 550px;
+    }
+
+    form {
+        width: 450px;
+    }
+
+}
+
+@media only screen and (max-width:850px) {
+
+    .medium {
+        width: 680px;
+    }
+
+    .bookImg {
+        padding: .75rem;
+    }
+}
+
+@media only screen and (max-width:770px) {
+
+    .medium {
+        width: 630px;
+    }
+
+    .bookImg {
+        padding: .5rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .medium {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width:680px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .medium {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width:630px) {
+
+    .medium {
+        width: 500px;
+    }
+
+    .blueBorder {
+        padding:.75rem .5rem;
+        width: 520px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .medium {
+        width: 450px;
+    }
+
+    .goldBorderThick {
+        margin: 1rem 0rem;
+    }
+
+    .blueBorder {
+        padding:.75rem 0rem;
+        width: 440px;
+    }
+
+    h2{
+        font-size: 1.1rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+        padding: .2rem;
+        line-height: 28px;
+    }
+
+    .times {
+        font-size: 1.25rem;
+    }
+
+    form {
+        width: 420px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+
+    .medium {
+        width: 420px;
+    }
+
+    .goldBorderThick {
+        border: 6px solid rgb(218, 180, 81);
+    }
+
+    .blueBorder {
+        width: 410px;
+    }
+
+    p {
+        font-size: 15.5px;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    .times {
+        font-size: 1.15rem;
+    }
+
+    form {
+        width: 390px;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+
+    .goldBorderThick {
+        display:none;
+    }
+
+    .blueBorder {
+        width: 380px;
+    }
+
+    form {
+        width: 360px;
+    }
+
+    .display451 {
+        display: none;
+    }
+
+    .display450 {
+        display: grid;
+        place-items: center;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        padding: 0rem;
+    }
+
+    .times {
+        font-size: 1.65rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 16.5px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .blueBorder {
+        width: 330px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    form {
+        width: 310px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .blueBorder {
+        width: 300px;
+    }
+
+    p {
+        font-size: 15px;
+        padding: 0rem;
+    }
+
+    form {
+        width: 285px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+
+    .blueBorder {
+        width: 285px;
+    }
+
+    p {
+        font-size: 14.5px;
+    }
+
+    form {
+        width: 275px;
+    }
 }
