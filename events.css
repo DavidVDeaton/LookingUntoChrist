@@ -339,6 +339,10 @@ form {
     .medium {
         width: 600px;
     }
+
+    .row1 {
+        width: 94%;
+    }
 }
 
 @media only screen and (max-width:680px) {
@@ -376,7 +380,7 @@ form {
 
     .blueBorder {
         padding:.75rem 0rem;
-        width: 440px;
+        width: 460px;
     }
 
     h2{
@@ -441,7 +445,7 @@ form {
     }
 
     .blueBorder {
-        width: 380px;
+        width: 400px;
     }
 
     form {
@@ -478,7 +482,7 @@ form {
 @media only screen and (max-width:450px) {
 
     .blueBorder {
-        width: 330px;
+        width: 355px;
     }
 
     p {
@@ -497,7 +501,7 @@ form {
     }
 
     .blueBorder {
-        width: 300px;
+        width: 325px;
     }
 
     p {
@@ -509,6 +513,14 @@ form {
         width: 285px;
     }
 }
+
+@media only screen and (max-width:375px) {
+
+    .blueBorder {
+        width: 300px;
+    }
+}
+
 
 @media only screen and (max-width:360px) {
 
