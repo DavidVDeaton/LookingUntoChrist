@@ -194,10 +194,6 @@ p {
     color:rgb(18, 44, 79);
 }
 
-.beta {
-    display: none;
-}
-
 .times {
     font-family:'Times New Roman', serif;
     font-size: 1.35rem;
@@ -741,22 +737,6 @@ p {
 
 @media only screen and (max-width: 665px) {
 
-    .alphaOmega {
-        display:none;
-    }
-
-    .beta {
-        display: grid;
-        place-items: center;
-        background-color: rgb(18, 44, 79);
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .beta2 {
-        display: none;
-    }
-
     .times {
         letter-spacing: 1.1px;
     }
@@ -851,10 +831,6 @@ p {
         font-size: 17.5px;
     }
 
-    .beta {
-        padding: 1rem .25rem;
-    }
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -888,15 +864,15 @@ p {
     }
 
     .heightMatch {
-        height: 160px;
+        height: 135px;
     }
 
     .width2 {
-        width: 360px;
+        width: 440px;
     }
 
     .h5special {
-        font-size: 12.5px;
+        font-size: 15px;
     }
 
     h2 {
@@ -911,22 +887,23 @@ p {
         height: 325px;
     }
 
-    .reviewDiv {
-        height: 325px;
-    }
-
     .portraitCircle {
         width: 370px;
         height: 370px;
     }
 
-    .beta2 {
-        display: block;
-        text-align: center;
+    .alphaOmega {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        padding: .5em 0em;
     }
 
-    .beta1 {
-        display: none;
+    .alpha {
+        place-items: center;
+    }
+
+    .omega {
+        place-items: center;
     }
 }
 
@@ -939,6 +916,10 @@ p {
     .h2hide975 {
         display: grid;
         place-items: center;
+    }
+
+    .width2 {
+        width: 400px;
     }
 
 }
@@ -965,11 +946,15 @@ p {
     }
 
     .h5special {
-        font-size: 11.5px;
+        font-size: 14px;
     }
 
     h6 {
         font-size: 15px;
+    }
+
+    .width2 {
+        width: 360px;
     }
 
 }
@@ -977,11 +962,7 @@ p {
 @media only screen and (max-width: 400px) {
 
     .width2 {
-        width: 300px;
-    }
-
-    .h5special {
-        font-size: 11px;
+        width: 340px;
     }
 
     .portraitCircle {
@@ -1023,5 +1004,16 @@ p {
 
     .row3 {
         padding: 0px;
+    }
+
+    .width2 {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    
+    .width2 {
+        width: 310px;
     }
 }
