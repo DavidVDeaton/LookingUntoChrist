@@ -922,6 +922,10 @@ p {
         width: 400px;
     }
 
+    h6 {
+        font-size: 15px;
+    }
+
 }
 
 @media only screen and (max-width: 440px) {
@@ -937,10 +941,6 @@ p {
         height: 350px;
     }
 
-    h6 {
-        font-size: 1rem;
-    }
-
     .width2 {
         width: 320px;
     }
@@ -950,7 +950,7 @@ p {
     }
 
     h6 {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .width2 {
@@ -978,7 +978,7 @@ p {
     }
 
     h6 {
-        font-size: 14px;
+        font-size: 13px;
     }
 
 }
@@ -994,7 +994,7 @@ p {
     }
 
     h6 {
-        font-size: 13px;
+        font-size: 12.5px;
     }
 
     .portraitCircle {
