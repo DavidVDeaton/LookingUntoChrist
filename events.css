@@ -20,8 +20,8 @@
 }
 
 .blueBorder {
-    border: 1.5px solid rgb(18,44,79);
-    margin: 3.5px;
+    border: 2.5px solid rgb(18,44,79);
+    margin: 4px;
     display:grid;
     place-items: center;
     padding:.75rem 0rem;
@@ -187,6 +187,16 @@ input, textarea {
     padding-left: 6px;
 }
 
+.buttonPadding {
+    margin: 2px;
+    padding: 15px 20px;
+    transition-duration: .6s;
+}
+
+.buttonPadding:hover {
+    background-color: rgb(18, 44, 79);
+}
+
 /* Border */
 
 .divider {
@@ -215,6 +225,12 @@ form {
 .times {
     font-family:'Times New Roman', serif;
     font-size: 1.5rem;
+}
+
+.rsvpBTN {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bolder;
 }
 
 @media only screen and (max-width:1185px) {
@@ -375,7 +391,7 @@ form {
     }
 
     .goldBorderThick {
-        margin: 1rem 0rem;
+        margin: .5rem 0rem;
     }
 
     .blueBorder {
@@ -440,12 +456,8 @@ form {
 
 @media only screen and (max-width:480px) {
 
-    .goldBorderThick {
-        display:none;
-    }
-
     .blueBorder {
-        width: 400px;
+        width: 395px;
     }
 
     form {
@@ -461,13 +473,13 @@ form {
         place-items: center;
     }
 
-    h2{
-        font-size: 1.5rem;
+    h2 {
+        font-size: .9rem;
         padding: 0rem;
     }
 
     .times {
-        font-size: 1.65rem;
+        font-size: 1.1rem;
     }
     
     h3 {
@@ -477,36 +489,66 @@ form {
     p {
         font-size: 16.5px;
     }
+
+    .medium {
+        width: 390px;
+    }
 }
 
 @media only screen and (max-width:450px) {
 
     .blueBorder {
-        width: 355px;
+        width: 350px;
+    }
+
+    h2 {
+        font-size: .85rem;
+        padding: 0rem;
     }
 
     p {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     form {
         width: 310px;
     }
+
+    .times {
+        font-size: 1rem;
+    }
+
+    .medium {
+        width: 345px;
+    }
 }
 
 @media only screen and (max-width:400px) {
+
+    .medium {
+        width: 325px;
+    }
     
     h1 {
         font-size: 2.8rem;
     }
 
     .blueBorder {
-        width: 325px;
+        width: 320px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        padding: 0rem;
+        text-align: center;
+    }
+
+    .times {
+        font-size: 1.45rem;
     }
 
     p {
-        font-size: 15px;
-        padding: 0rem;
+        font-size: 18px;
     }
 
     form {
@@ -519,6 +561,10 @@ form {
     .blueBorder {
         width: 300px;
     }
+
+    .medium {
+        width: 305px;
+    }
 }
 
 
@@ -529,10 +575,14 @@ form {
     }
 
     p {
-        font-size: 14.5px;
+        font-size: 17px;
     }
 
     form {
         width: 275px;
+    }
+
+    .medium {
+        width: 295px;
     }
 }
