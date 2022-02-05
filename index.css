@@ -80,9 +80,9 @@ body {
 .row3 {
     display: grid;
     margin: 2.5em 0em .5em 0em;
-    width: 80%;
+    width: 60%;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 10px;
 }
 
@@ -288,7 +288,7 @@ p {
 @media only screen and (max-width:1600px) {
 
     .row3 {
-        width: 90%;
+        width: 65%;
     }
 }
 
@@ -299,7 +299,7 @@ p {
     }
 
     .row3 {
-        width: 100%;
+        width: 70%;
         padding: 0rem 1rem;
     }
 
@@ -335,10 +335,6 @@ p {
 
 @media only screen and (max-width:1315px) {
 
-    .row3 {
-        grid-template-columns: 1fr auto 1fr;
-    }
-
     .row2 {
         padding: 2.5em 7em;
     }
@@ -364,9 +360,6 @@ p {
         padding: .65rem;
     }
 
-    h6 {
-        font-size: 15px;
-    }
 }
 
 @media only screen and (max-width:1265px) {
@@ -382,31 +375,14 @@ p {
     .reviewDiv {
         width: 360px;
     }
+
+    h6 {
+        font-size: 15.75px;
+    }
 }
 
 @media only screen and (max-width:1180px) {
 
-    .font20e {
-        font-size: 17px;
-    }
-
-    .eventDiv {
-        width: 350px;
-    }
-
-    .reviewDiv {
-        width: 350px;
-    }
-
-    .portraitCircle {
-        margin-top: 15px;
-        width:350px;
-        height: 350px;
-    }
-
-    .marginVar {
-        margin-top: 55px;
-    }
 
     .row2 {
         padding: 2.5em 3em;
@@ -431,6 +407,10 @@ p {
         height: 175px;
     }
 
+    .row3 {
+        width: 80%;
+    }
+
 }
 
 @media only screen and (max-width:1125px) {
@@ -447,29 +427,8 @@ p {
         font-size: 30px;
     }
 
-    .font20e {
-        font-size: 16px;
-    }
-
-    .eventDiv {
-        width: 330px;
-    }
-
-    .reviewDiv {
-        width: 330px;
-    }
-
-    .portraitCircle {
-        width:340px;
-        height: 340px;
-    }
-
-    .marginVar {
-        margin-top: 65px;
-    }
-
     h6 {
-        font-size: 14px;
+        font-size: 14.75px;
     }
 }
 
@@ -479,45 +438,23 @@ p {
         padding: .5em 8em;
     }
 
-    .eventDiv {
-        width: 315px;
-    }
-
-    .reviewDiv {
-        width: 315px;
-    }
-
     .row2 {
         padding: 2.5em 1em;
     }
 
     .row3 {
-        column-gap: 0px;
+        width: 84%;
     }
 }
 
 @media only screen and (max-width:1035px) {
-
-    .portraitCircle {
-        border: 10px solid rgba(18,44,79);
-        width: 325px;
-        height: 325px;
-    }
 
     .font20 {
         font-size: 17px;
     }
 
     h6 {
-        font-size: 13.25px;
-    }
-
-    .eventDiv {
-        width: 300px;
-    }
-
-    .reviewDiv {
-        width: 300px;
+        font-size: 14px;
     }
 
     .alphaOmega {
@@ -526,10 +463,6 @@ p {
 
     .row2 {
         padding: 2.5em .25em;
-    }
-
-    .marginVar {
-        margin-top: 80px;
     }
 
 }
@@ -547,43 +480,22 @@ p {
     .blueBorderCenter {
         margin: 1px;
     }
-    
-    .eventDiv {
-        width: 290px;
-    }
 
-    .reviewDiv {
-        width: 290px;
+    .row3 {
+        width: 88%;
     }
 
 }
 
 @media only screen and (max-width: 975px) {
 
+    .row3 {
+        width: 95%;
+    }
+
     .container {
         margin: 1em 0em;
     }
-
-    .row3 {
-        grid-template-columns: none;
-        grid-template-rows: auto auto auto;
-        row-gap: 0px;
-        width: 90%;
-        margin-top: .8em;
-    }
-
-    .eventDiv {
-        width: 80%;
-        padding-bottom: 20px;
-        height: 400px;
-    }
-
-    .reviewDiv {
-        width: 80%;
-        padding-bottom: 20px;
-        height: 400px;
-    }
-
     .row2 {
         padding: 2.5em 8.5em;
         grid-template-columns: 1fr 1fr;
@@ -597,10 +509,6 @@ p {
 
     p {
         padding: .75em;
-    }
-
-    .font20e {
-        font-size: 20px;
     }
 
     .row1 {
@@ -623,38 +531,7 @@ p {
     }
 
     .margin20 {
-        margin-top: 20px;
-    }
-
-    .divider975 {
-        display: grid;
-        place-items: center;
-        width: 100%;
-        border-bottom: 1px solid rgb(218,180, 81);
-        border-top: 1px solid rgb(218,180, 81);
-        margin: 1.5em 0em 1em 0em;
-    }
-
-    .internalNav {
-        width: 100%;
-    }
-
-    .portraitCircle {
-        width:420px;
-        height: 420px;
-        border: 14px solid rgba(18,44,79);
-    }
-
-    .margin20 {
         margin: 0px;
-    }
-
-    .marginVar {
-        margin: 20px 0px 0px 0px;
-    }
-
-    h6 {
-        font-size: 1.1rem;
     }
 
     .h2hide975 {
@@ -670,9 +547,65 @@ p {
         padding: .5em 5em;
     }
 
+    .marginVar {
+        margin-top: 60px;
+    }
+
 }
 
 @media only screen and (max-width: 850px) {
+
+    .divider975 {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        border-bottom: 1px solid rgb(218,180, 81);
+        border-top: 1px solid rgb(218,180, 81);
+        margin: 2em 0em 2em 0em;
+    }
+
+    .font20e {
+        font-size: 20px;
+    }
+
+    .internalNav {
+        width: 100%;
+    }
+
+    .portraitCircle {
+        width:420px;
+        height: 420px;
+        border: 14px solid rgba(18,44,79);
+    }
+
+    .marginVar {
+        margin: 20px 0px 0px 0px;
+    }
+
+    h6 {
+        font-size: 1.1rem;
+    }
+
+    .row3 {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        row-gap: 0px;
+        width: 90%;
+        margin-top: .8em;
+    }
+
+    .eventDiv {
+        width: 80%;
+        padding-bottom: 20px;
+        height: 400px;
+    }
+
+    .reviewDiv {
+        width: 80%;
+        padding-bottom: 20px;
+        height: 400px;
+    }
+
 
     .alphaOmega {
         padding: .5em 3.75em;
