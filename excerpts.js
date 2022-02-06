@@ -5,7 +5,6 @@ const introAudio = new Audio (src = "audio/Introducion-Excerpt.mp3");
 function loadSelected () {
     
     $("#ex1").addClass("selected");
-    introAudio.play();
 
 };
 
@@ -32,11 +31,15 @@ for (let g=1; g<11; g++) {
 
 $("#ex1").click(function () {
 
+    introAudio.play();
+
     $("#clip").append("<p>Though we can scarcely wrap our mortal minds around the vast concept of eternity or something always existing—having no beginning and no end—Joseph wants us to do our best to grasp that concept. He wants us to not only understand that God is an eternal, self-existent being, he wants us to understand that the same truth applies to us. Of all the stunning eternal truths taught by the Prophet Joseph Smith, none outranks his teachings about who we are and how we relate to our Father in Heaven. When it comes to conscious beings, the first startling truth is: In the beginning there was no beginning. All the conscious beings we refer to—in whatever state of progression they may be—Gods, angels, unembodied spirits, disembodied spirits, mortal men, women and children—as conscious thinking individuals, none had a beginning.</p><h6>Page 14</h6>");
 
 });
 
 $("#ex2").click(function () {
+
+    introAudio.play();
 
     $("#clip").append("<p>The Savior has given His all to work out the infinite atonement. He wants my all in return. Ultimately, the highest and wisest use of my agency is to come unto Christ, look to Him in every thought, and willfully submit with all my mental, emotional, physical and spiritual faculties to follow the covenant path of unqualified, unconditional discipleship. No one else can do it for me. There is no salvation by proxy for the living.</p><p>Each one of us has to make up our minds to have no other gods before Him and to come unto Christ with all our might, mind and strength (2 Nephi 25:29). No lazy, half-hearted, feeble-minded effort will do. We’re the only ones who can decide to take control of our mortal, easily tempted, frequently distracted mind and worship the only true God and Jesus Christ whom Heavenly Father has sent. Thus on that basis I submit to you this declaration:</p><p>The consummate truth of life is that we alter our destiny by altering our thoughts.</p><p>The mind is our most crucial determinant, our crowning asset, our ultimate arena of battle.</p><p>If we will master the power of our minds, we may do or be whatsoever we will.</p><p>It all begins and it all depends on your mind.</p><h6>Page 52</h6>");
 
@@ -44,11 +47,15 @@ $("#ex2").click(function () {
 
 $("#ex3").click(function () {
 
+    introAudio.play();
+
     $("#clip").append("<p>Experiencing an evil or impure impulse—an overture injected into our minds by the adversary—does not mean we are unclean in our thoughts. Initially, it is a temptation and only a temptation. In mortality, we cannot stop the perpetual influx of enticements and temptations. It is the crux of our mortal test. Temptations become sins only if we accept and dwell on them. If you entertain them, add to them, or even “savor” them, then, yes, you are committing sin in your head, as the Lord plainly taught (Matt 5:28; 3 Ne. 12:28). However, if you catch and identify them for what they are—Satan’s tawdry attempts to get you to sin—and promptly shift your thinking, refusing to dwell on them, you have not sinned. If fact, the opposite is true; you have actually increased in righteousness. Lehi taught that the very definition of righteousness is to be exposed to temptation but not succumb to it (2 Ne 2:13). Each time you unmask one of Satan’s ploys and reject it, you achieve a small but significant moral victory and add another drop of oil to your lamp of righteousness.</p><p>Without this insight, we also become vulnerable to another satanic ploy, which Satan throws on top of the first temptation. Once he’s convinced you and me that we’re the one who spawned the temptation, he berates us and then compounds his assault by suggesting we may as well continue since we’ve already sinned in our minds.</p><h6>Page 94</h6>");
 
 });
 
 $("#ex4").click(function () {
+
+    introAudio.play();
 
     $("#clip").append("<p>Without discounting the gravity of major sins one iota, I submit that Satan’s efforts to lure us into committing major sins is but the proverbial tip of the iceberg of satanic ploys. He has other prevalent and frequent strategies he unleashes on us that are just as potentially injurious as the ones he uses to tempt us to commit major sins—but these tactics are far more diabolically disguised.</p><p>Hear it, O ye ends of the earth! Any thought that tears you down; diminishes your sense of worth; questions your identity as a child of God; or urges you to doubt, belittle, or berate yourself, is not coming from you (your intelligence of spirit); and it is most certainly not coming from a divine source. It is coming from the depths of the infernal pit, from Lucifer and the household of Satan on the dark side of the veil.</p><h6>Page 100</h6>");
 
@@ -56,6 +63,8 @@ $("#ex4").click(function () {
 
 $("#ex5").click(function () {
 
+
+    introAudio.play();
     $("#clip").append("<p>A subtle and important distinction has become apparent to me. SKAM is most effective when I am in victim mode, framing a situation as being only about my needs. Instead, when I am thinking outside myself, praying in the morning to be able recognize an opportunity to get past myself and to act immediately on something—anything—that would help someone else, everything else in my day goes better. And, even if it doesn’t make the six o’clock news, each time I detect, disagree and disobey a selfish thought, I take a step away from SKAM and a step closer to Christ and that is more than enough.</p><h6>Page 120</h6>");
 
 });
