@@ -1,6 +1,11 @@
+//Audio Variables
+
+const introAudio = new Audio (src = "audio/Introducion-Excerpt.mp3");
+
 function loadSelected () {
     
     $("#ex1").addClass("selected");
+    introAudio.play();
 
 };
 
