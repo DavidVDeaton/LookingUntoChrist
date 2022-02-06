@@ -131,6 +131,11 @@ input, textarea {
 
 /* Font sizes, families and colors */
 
+.simple {
+    text-decoration: none;
+    color: rgb(18, 44, 79);
+}
+
 .font20 {
     font-size: 20px;
     animation-name: fadeIn;
@@ -169,6 +174,15 @@ input, textarea {
     background-color: #ffffff;
     border-radius: 3px;
     padding: 8px;
+    margin: 0px 0px 20px 0px;
+}
+
+.center2 {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 2px;
     margin: 0px 0px 20px 0px;
 }
 
@@ -268,6 +282,10 @@ input, textarea {
     .reviewSection {
         padding: 2em 7.5em 1em 7.5em;
     }
+
+    .commentSection {
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width:850px) {
@@ -298,10 +316,6 @@ input, textarea {
 
     p {
         font-size: 17px;
-    }
-
-    .commentSection {
-        width: 80%;
     }
 
     .font {
@@ -353,6 +367,10 @@ input, textarea {
         padding: 8px 0px;
     }
 
+    .center2 {
+        margin-top: 10px;
+    }
+
     .font {
         font-size: 14.5px;
     }
@@ -373,7 +391,16 @@ input, textarea {
     }
 
     .commentSection {
-        width: 90%;
+        width: 70%;
+    }
+
+    .treb {
+        text-align: center;
+    }
+
+    .h1Small {
+        font-size: 2.5rem;
+        padding: .4rem 0rem;
     }
 }
 
@@ -389,6 +416,10 @@ input, textarea {
 
     p {
         font-size: 15px;
+    }
+
+    .commentSection {
+        width: 80%;
     }
 }
 
@@ -410,11 +441,6 @@ input, textarea {
 }
 
 @media only screen and (max-width:460px) {
-
-    .h1Small {
-        font-size: 2.5rem;
-        padding: .4rem 0rem;
-    }
 
     .font {
         padding: 0px 20px;
