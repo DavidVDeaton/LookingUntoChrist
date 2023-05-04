@@ -17,8 +17,8 @@ body {
 .pent {
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
     row-gap: 2px;
     padding: .75em;
     border-radius: 5px;
@@ -178,7 +178,12 @@ h6 {
     .tabletLayout {
         display: grid;
         place-items: center;
-        width: 65%;
+        margin-top: 10px;
+    }
+
+    .version {
+        margin-right: 4em;
+        margin-left: 4em;
     }
 
 }
@@ -189,11 +194,6 @@ h6 {
         width: 70%;
     }
 
-    .tabletLayout {
-        display: grid;
-        place-items: center;
-        width: 75%;
-    }
 }
 
 @media only screen and (max-width:750px) {
@@ -210,16 +210,18 @@ h6 {
         width: 95%;
     }
 
-    .tabletLayout {
-        width: 85%;
+    .version {
+        margin-right: 1.5em;
+        margin-left: 1.5em;
     }
 
 }
 
 @media only screen and (max-width:575px) {
 
-    .tabletLayout {
-        width: 95%;
+    .version {
+        margin-right: .25em;
+        margin-left: .25em;
     }
 
 }
