@@ -17,8 +17,7 @@ body {
     display: grid;
     place-items: center;
     width: 80%;
-    margin: 2em;
-    min-height: 100vh;
+    min-height: 96vh;
 }
 
 .portraitBorder {

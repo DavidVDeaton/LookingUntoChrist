@@ -16,8 +16,8 @@ body {
 
 .pent {
     display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* place-items: center; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 15px;
     row-gap: 2px;
     padding: .75em;
@@ -38,7 +38,8 @@ body {
 
 .version {
     padding: .5rem;
-    place-items: center;
+    /* place-items: center; */
+    
     display: grid;
     color: rgb(18, 44, 79);
 }
@@ -71,8 +72,15 @@ h4 {
     font-weight: bolder;
 }
 
-h6 {
+.h6 {
     font-size: 1rem;
+    padding: .15rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+h6 {
+    font-size: 18px;
     padding: .15rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
@@ -87,6 +95,11 @@ h6 {
 .center {
     text-align: center;
     margin-bottom: .3rem; 
+}
+
+.display-center {
+    display: grid;
+    place-items: center;
 }
 
 /* Borders */
@@ -111,56 +124,76 @@ h6 {
 }
 
 /* Buttons */
-
-.button {
-    border:4px solid rgb(218, 180, 81);
-    transition-duration: .5s;
+.order-btn {
+    background-color: #122C4F;
+    color: #DAB451;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 13.4px 39.5px;
+    transition-duration: 200ms;
+    margin-top: 20px;
 }
 
-.button:hover {
-    border-color: rgb(18, 44, 79);
+.order-btn:hover {
+    background-color: #DAB451;
+    color: #122C4F;
 }
 
 /* Hidden */
 
 .tabletLayout {
-    display: none;
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:1560px) {
+
+    .thickGold {
+        width: 92%;
+    }
+
+    .frontBack {
+        width: 65%;
+    }
+
 }
 
 @media only screen and (max-width:1360px) {
 
     .thickGold {
-        width: 90%;
+        width: 98%;
     }
 
     .frontBack {
-        width: 60%;
+        width: 70%;
     }
 
 }
 
-@media only screen and (max-width:1100px) {
+@media only screen and (max-width:1260px) {
 
     h3 {
         font-size: 18px;
     }
 
     p {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .thickGold {
-        width: 94%;
+        width: 92%;
     }
-
-}
-
-@media only screen and (max-width:975px) {
 
     .pent {
         grid-template-columns: none;
         grid-template-rows: auto;
         row-gap: 10px;
+    }
+
+    .tablet-disappear {
+        display: none;
     }
 
     .description {
@@ -175,15 +208,9 @@ h6 {
         display: none;
     }
 
-    .tabletLayout {
-        display: grid;
-        place-items: center;
-        margin-top: 10px;
-    }
-
     .version {
-        margin-right: 4em;
-        margin-left: 4em;
+        margin-right: 8em;
+        margin-left: 8em;
     }
 
 }
@@ -194,12 +221,22 @@ h6 {
         width: 70%;
     }
 
+    .version {
+        margin-right: 6em;
+        margin-left: 6em;
+    }
+
 }
 
 @media only screen and (max-width:750px) {
     
     .frontBack {
         width: 75%;
+    }
+
+    .version {
+        margin-right: 2.5em;
+        margin-left: 2.5em;
     }
 
 }
