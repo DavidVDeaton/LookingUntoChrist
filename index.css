@@ -229,6 +229,22 @@ p {
     display: none;
 }
 
+.fa-play-circle {
+    transition-duration: .4s;
+}
+
+.fa-stop-circle {
+    transition-duration: .4s;
+}
+
+.fa-play-circle:hover {
+    color:rgb(218,180, 81);
+}
+
+.fa-stop-circle:hover {
+    color:rgb(218,180, 81);
+}
+
 /* CSS Class that ties to JS function */
 
 .none {
