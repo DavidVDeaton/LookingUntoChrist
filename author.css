@@ -16,7 +16,7 @@ body {
 .container {
     display: grid;
     place-items: center;
-    width: 80%;
+    width: 90%;
     margin: 3em 0em;
 }
 
@@ -28,10 +28,37 @@ body {
     border: 14px solid rgba(18,44,79);
 }
 
+.portraitBorderGold {
+    width:440px;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
+    border: 14px solid rgb(218,180,81);
+}
+
+.coaching-logo-div {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.coaching-logo-div-ap {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
 .blueBorderThick {
     display:grid;
     place-items: center;
     border: 14px solid rgba(18,44,79);
+}
+
+.logo-size {
+    height: 180px;
+}
+
+.logo-size-ap {
+    height: 110px;
 }
 
 .row1 {
@@ -60,7 +87,7 @@ body {
     display:grid;
     place-items: center;
     padding: 1rem;
-    background-color: rgb(218,180, 81);
+    background-color: rgb(218,180,81);
     margin: 8px;
 }
 
@@ -68,7 +95,7 @@ iframe {
     width: 1040px;
     height: 265px;
     border-radius: 12px;
-    background-color: rgb(218,180, 81);
+    background-color: rgb(218,180,81);
     padding: 1em;
 }
 
@@ -147,6 +174,11 @@ h2{
     font-weight: bold;
 }
 
+.plain {
+    text-decoration: none;
+    color:#122C4F;
+}
+
 /* HTML Elements */
 
 p {
@@ -160,6 +192,10 @@ li {
     font-size: 18px;
     line-height: 24px;
     padding-left: 1.4rem;
+}
+
+.justifyLeft-coaching {
+    justify-self: start;
 }
 
 /* Accent CSS */
@@ -178,6 +214,10 @@ li {
     margin: .25em 0em;
 }
 
+.div-540 {
+    display: none;
+}
+
 @media only screen and (max-width:1315px) {
     
     .row1 {
@@ -185,7 +225,7 @@ li {
     }
 
     .container {
-        width: 85%;
+        width: 94%;
         margin: 2em 0em;
     }
 
@@ -200,10 +240,15 @@ li {
     .container {
         width: 100%;
         margin: 2em 1em;
+        padding: 1em;
     }
 
     .portraitBorder {
-        width:380px;
+        width:360px;
+    }
+
+    .portraitBorderGold {
+        width:360px;
     }
 
     .column1 {
@@ -231,7 +276,11 @@ li {
 @media only screen and (max-width:925px) {
 
     .portraitBorder {
-        width:340px;
+        width:350px;
+    }
+
+    .portraitBorderGold {
+        width:350px;
     }
 
     .column1 {
@@ -243,11 +292,19 @@ li {
         padding: 1rem .2rem;
     }
 
+    .logo-size-ap {
+        height: 100px;
+    }
+
 }
 
 @media only screen and (max-width:860px) {
 
     .portraitBorder {
+        width:440px;
+    }
+
+    .portraitBorderGold {
         width:440px;
     }
 
@@ -306,6 +363,10 @@ li {
         width:400px;
     }
 
+    .portraitBorderGold {
+        width:400px;
+    }
+
     h1 {
         font-size: 3rem;
     }
@@ -336,6 +397,10 @@ li {
     }
 
     .portraitBorder {
+        width:380px;
+    }
+
+    .portraitBorderGold {
         width:380px;
     }
 
@@ -385,16 +450,39 @@ li {
 
 @media only screen and (max-width:540px) {
 
+    .coaching-logo-div {
+        display: none;
+    }
+
+    .div-540 {
+        display: grid;
+        place-items: center;
+    }
+
     .container {
         width: 94%;
+    }
+
+    .auto-div {
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto 1fr;
     }
 
     .portraitBorder {
         border: 10px solid rgba(18,44,79);
     }
+
+    .portraitBorderGold {
+        border: 10px solid rgb(215,180,81);
+    }
     
     .blueBorderThick {
         border: 10px solid rgba(18,44,79);
+    }
+
+    .logo-size {
+        height: 100px;
     }
 
     p {
@@ -408,7 +496,7 @@ li {
 
 @media only screen and (max-width:510px) {
 
-    .column2 {
+     .column2 {
         margin: 5px;
     }
 
@@ -422,10 +510,22 @@ li {
 
     .font16 {
         font-size: 15px;
-    }
+    } 
 
     iframe {
         width: 460px;
+    } 
+
+    .container {
+        width: 98%;
+    }
+
+    .logo-size {
+        width: 100px;
+    }
+
+    .logo-size-ap {
+        width: auto;
     }
 
 }
@@ -453,6 +553,10 @@ li {
         width:350px;
     }
 
+    .portraitBorderGold {
+        width: 350px;
+    }
+
     .font16 {
         font-size: 14px;
     }
@@ -460,6 +564,15 @@ li {
     h2 {
         font-size: 15px;
         text-align: center;
+    }
+
+    .logo-size-ap {
+        height: 80px;
+        width: auto;
+    }
+
+    .container {
+        padding: 1em 0em;
     }
 
 }
@@ -502,6 +615,10 @@ li {
         width:300px;
     }
 
+    .portraitBorderGold {
+        width:300px;
+    }
+
     .font16 {
         padding: .7rem .25rem;
         font-size: 13.5px;
@@ -520,6 +637,10 @@ li {
     }
 
     .portraitBorder {
+        width:290px;
+    }
+
+    .portraitBorderGold {
         width:290px;
     }
 
